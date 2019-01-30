@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sudadera banda delantera</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+<script src="jquery-3.2.1.min.js"></script>
+<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    
+    <script>
+        $(function(){
+            $(".añadir").dialog({
+                autoOpen: false,
+                height: 150,
+                width: 350
+            });
+            $(".boton1").click(function(){
+                $(".añadir").dialog('open');
+            });
+            $(".mostrarDisponibilidad").dialog({
+                autoOpen: false,
+                height: 400,
+                width: 350
+            });
+            $(".boton2").click(function(){
+                $(".mostrarDisponibilidad").dialog('open');
+            });
+        });
+    </script>
+<style>
+    body{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .izquierda{
+        float: left;
+        padding-top: 5%;
+        padding-left: 5%;
+        width: 50%;
+    }
+    #imagen1{
+        width: 300px;
+        height: 300px;
+    }
+    .derecha{
+        width: 40%;
+        float: left;
+        padding-top: 100px;
+        padding-right: 20px;
+        padding-left: 30px;
+    }
+    .nombre{
+        font-size: 140%;
+    }
+    .referencia{
+        font-size: 80%;
+    }
+    .precio{
+        font-size: 120%;
+        text-decoration: underline;
+        
+    }
+    .boton1{
+        background-color: black;
+        color:  #f1f1f1;
+        font-size: 16px;
+        padding: 16px 30px;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        margin-right: 10px;
+    }
+    .boton1:hover{
+        background-color: rgb(29, 29, 29);
+    }
+    .boton2{
+        background-color: #c5c5c5;
+        color: black;
+        font-size: 16px;
+        padding: 16px 30px;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .boton1, .boton2{
+        margin-top: 20px; 
+    }
+    .boton2:hover{
+        background-color: #a1a1a1;
+    }
+
+    .tallaElegida {
+	border-bottom: 2px solid #ebebeb;
+    }
+
+    .talla:last-child {
+        margin-right: 0;
+    }
+
+    .tallaElegida .talla {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .tallaElegida label {
+        display: inline-block;
+        height: 30px;
+        min-width: 30px;
+        text-align: center;
+        font-size: 14px;
+        color: #414141;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 50px;
+        padding: 7px 6px 0;
+    }
+
+    .tallaElegida input[type=radio] {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .tallaElegida input[type=radio]:checked+label {
+        background: black;
+        color: #fff;
+    }
+
+    #azul{
+        background: rgb(78, 78, 255);
+    }
+    #rojo{
+        background: rgb(255, 79, 79);
+    }
+    #verde{
+        background: rgb(70, 255, 70);
+    }
+
+    #azul,#rojo,#verde{
+        padding: 10px;
+        border-radius: 15px;
+        width: 14%;
+        float:left;
+        margin-right: 3%;
+    }
+
+    
+</style>
+
+    <body>
+        <div class="izquierda">
+            <img src="../imagenes/sudadera_banda_delantera/1.jpg" id="imagen1">
+            <img src="../imagenes/sudadera_banda_delantera/2.jpg" id="imagen1">
+            <img src="../imagenes/sudadera_banda_delantera/3.jpg" id="imagen1">
+            <img src="../imagenes/sudadera_banda_delantera/4.jpg" id="imagen1">
+            <img src="../imagenes/sudadera_banda_delantera/5.jpg" id="imagen1">
+            <img src="../imagenes/sudadera_banda_delantera/6.jpg" id="imagen1">
+        </div>
+        <div class="derecha">
+            <p class="nombre">Sudadera banda delantera</p>
+            <p class="referencia">Ref. 9595324</p>
+            <p class="precio">Precio 22,99€</p>
+            <p class="descripcion">Sudadera navy con banda delantera en contraste, cuello alto y cremallera hasta el pecho.</p>
+        
+
+            <fieldset>
+            <legend>Colores disponibles: </legend>
+                <div id="azul">
+                    <label for="azul" >Azul</label>
+                    <input type="radio" name="azul" id="azul">
+                </div>
+                <div id="rojo">
+                    <label for="rojo">Rojo</label>
+                    <input type="radio" name="rojo" id="rojo">
+                </div>
+                <div id="verde">
+                    <label for="verde">Verde</label>
+                    <input type="radio" name="verde" id="verde">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tallas disponibles: </legend>
+                    <div class="tallaElegida">
+                        <p>Tallas:</p>
+                        <div class="talla">
+                            <input type="radio" name="t" id="xs-size">
+                            <label for="xs-size">32</label>
+                        </div>
+                        <div class="talla">
+                            <input type="radio" name="t" id="s-size">
+                            <label for="s-size">34</label>
+                        </div>
+                        <div class="talla">
+                            <input type="radio" name="t" id="m-size" checked="">
+                            <label for="m-size">36</label>
+                        </div>
+                        <div class="talla">
+                            <input type="radio" name="t" id="l-size">
+                            <label for="l-size">38</label>
+                        </div>
+                        <div class="talla">
+                            <input type="radio" name="t" id="xl-size" >
+                            <label for="xl-size">40</label>
+                        </div>
+                        <div class="talla">
+                            <input type="radio" name="t" id="xxl-size" >
+                            <label for="xxl-size">42</label>
+                        </div>
+                    </div>
+            </fieldset>
+            <button class="boton1">Añadir a la cesta</button>
+            <button class="boton2">Ver disponibilidad</button>
+
+            <div class="añadir" title="Añadir prenda" style="display:none">
+                <p>Has añadido un nuevo producto a la cesta</p>
+            </div>
+
+            <div class="mostrarDisponibilidad" title="Mostrar disponibilidad" style="display:none">
+                <p>Ver disponibilidad en tienda</p>
+                <p>Selecciona una talla para ver si está disponible en tienda</p>
+                <p>¿Que talla estás buscando?</p>
+                
+                <div class="talla1">
+                        <input type="radio" name="t" id="xs-size">
+                        <label for="xs-size">XS</label>
+                    </div>
+                    <div class="talla1">
+                        <input type="radio" name="t" id="s-size">
+                        <label for="s-size">S</label>
+                    </div>
+                    <div class="talla1">
+                        <input type="radio" name="t" id="m-size" checked="">
+                        <label for="m-size">M</label>
+                    </div>
+                    <div class="talla1">
+                        <input type="radio" name="t" id="l-size">
+                        <label for="l-size">L</label>
+                    </div>
+                    <div class="talla1">
+                        <input type="radio" name="t" id="xl-size" >
+                        <label for="xl-size">XL</label>
+                    </div>
+                    <div class="talla1">
+                        <input type="radio" name="t" id="xxl-size" >
+                        <label for="xxl-size">XXL</label>
+                    </div>
+                    <button class="boton2">Continuar</button>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+    </body>
+
+</html>

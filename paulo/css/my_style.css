@@ -1,0 +1,17 @@
+/* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+#map {
+    height: 700px;
+    width: 100%;
+}
+
+#buscador_tienda {
+    height: 30em;
+    width: 25em;
+    border: 5px solid gray;
+}
+
+#buscador_tienda, h1 {
+    color: black;
+    text-align: center;
+}
