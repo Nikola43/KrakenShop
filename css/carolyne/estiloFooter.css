@@ -1,0 +1,108 @@
+/***********ESTILOS DE FOOTER**@carolyne Fernandez*******/
+
+footer{
+    background: #282828;
+    padding-top: 60px;
+}
+
+footer p {
+	color: #8f8f8f;
+}
+footer h2 {
+	color: white;
+}
+        .footer-left{
+            padding: 1%;
+}
+
+.footer-interior{
+    padding: 10%;
+}
+.footer-interior ul {
+	list-style: none;
+	float: left;
+	margin-right: 37px;
+}
+
+.footer-interior ul:last-child {
+	margin-right: 0;
+}
+
+.footer-interior ul li a {
+	display: inline-block;
+	position: relative;
+	padding-left: 20px;
+	font-size: 14px;
+	color: #8f8f8f;
+	margin-bottom: 6px;
+}
+
+.footer-interior ul li a:after {
+	position: absolute;
+	content: "";
+	width: 5px;
+	height: 5px;
+	left: 0;
+	top: 8px;
+	border: 1px solid #ec105a;
+	border-radius: 50%;
+    transition: all 0.2s;
+	
+}
+
+.footer-interior ul li a:hover {
+	color: #fff;
+}
+
+.footer-interior ul li a:hover:after {
+	width: 7px;
+	height: 7px;
+	top: 6px;
+	background: #ec105a;
+}
+
+/******SOCIALES********/
+
+
+ .redes-sociales a i {
+	font-size: 30px;
+	color: #d7d7d7;
+	float: left;
+	margin-right: 19px;
+	overflow: hidden;
+	transition: all 0.3s;
+}
+.redes-sociales a span {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #9f9fa0;
+	padding-top: 10px;
+	transition: all 0.3s;
+}
+.redes-sociales a.instagram:hover i {
+	color: #2F5D84;
+}
+
+.redes-sociales a.google-plus:hover i {
+	color: #E04B37;
+}
+
+.redes-sociales a.twitter:hover i {
+	color: #5abed6;
+}
+.redes-sociales a.facebook:hover i {
+	color: #39599F;
+}
+ .redes-sociales a.twitter:hover i {
+	color: #5abed6;
+}
+
+.redes-sociales a.youtube:hover i {
+	color: #D12227;
+}
+
+.redes-sociales a:hover span {
+	color: #fff;
+}
