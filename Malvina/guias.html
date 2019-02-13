@@ -4,74 +4,155 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <script src="../js/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-
-    <script src="../js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+    <script src="../css/bootstrap.css"></script>
     <style>
         /*ocultar el seguir leyendo par mostrar cuando haga el onclick*/
-        #seguir_leyendo_1, #seguir_leyendo_2{
+        #seguir_leyendo_1, #seguir_leyendo_2, #seguir_leyendo_3, #seguir_leyendo_4{
             display: none;
         }
-
-
     </style>
 
-    <script src ="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
     <script>
 
         //comienzo de jQuery // de forma compacta
-        $(document).ready(function(){
+        $(document).ready(function () {
 
             //para recogerme todos los enlaces DE la pagina articulo
-            $('.b1 a').click(function(e) {
+            $('.b1 a').click(function (e) {
                 e.preventDefault();
                 $(this).hide("slow");
-                $("#seguir_leyendo_" +this.id.split("_")[this.id.split("_").length-1]).show("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
 
             });
 
         });
 
+        $(document).ready(function () {
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b2 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+        });
+        $(document).ready(function () {
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b3 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+        });
+        $(document).ready(function () {
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b4 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+
+        });
+
+
+
     </script>
 </head>
 <body>
-<div class="container">
-    <h1>Three equal width columns</h1>
-    <p>Note: Try to add a new div with class="col" inside the row class - this will create four equal-width columns.</p>
+<div id="cuerpo">
+    <h1>UNA SUDADERA CON CAPUCHA PARA MUJER, ELEGANTE Y A LA MODA</h1>
+</div>
+<div class="container-fluid">
+    <p>PAGINAS.</p>
     <div class="row">
+        <div class="col-sm-3 text-left bg-primary mr-6 p-5">
+            <h2> Una sudadera para mujer, una prenda intemporal</h2>
+            <div class="b1">
+                <p id="t1">Mucho más ponible, Tela de seda, algodón o poliéster imita a la perfección no solo
+                    su apariencia, sino también sus principales propiedades: es un material cómodo, resistente,
+                    aislante, transpirable y flexible convierte una <mark>sudadera</mark>, en una prenda selecta.
+                </p>
 
+                <p><a id="a_leer_1" href="guias.html">
+                    <img src="../imagenes/imagenLeerMas.JPG">
+                </a></p>
 
-        <div class="col-md-3">
-            <div class="cont1" style="background-color:orange;">
-                <h2> La chaqueta de polipiel para mujer, una prenda intemporal</h2>
-                <div class="b1">
-                    <p id="t2">Mucho más asequible que el cuero auténtico, la polipiel imita a la perfección no solo su
-                        apariencia,
-                        sino también sus principales propiedades: es un material cómodo, resistente, aislante,
-                        transpirable y flexible.
-                        La imitación perfecta del cuero convierte una chaqueta, una cazadora o un abrigo en una prenda
-                        selecta.
-                        Disponible en </p>
-
-                    <p><a id="a_leer_1" href="guias.html">
-                        <img src="../Malvina/imagen_m/imagenLeerMas.JPG">
-                    </a></p>
-
-                    <div id="seguir_leyendo_1">
-                        <p>"LEYENDO1"Vestibulum pulvinar urna et quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-                    </div>
+                <div id="seguir_leyendo_1">
+                    <p>"LEYENDO1"Las Sudaderas para mujer son siempre atractivas.
+                        Su estilo informal, un poco masculino, las distingue de otros abrigos y chaquetas de invierno más sobrios.
+                        Con su largo te sentirás perfectamente arropada. Elige un modelo con cordón en la cintura o con bajo redondeado
+                        para suavizar su característico corte recto.
+                    </p>
                 </div>
             </div>
+        </div>
+        <div class="col-sm-3 text-right bg-primary  p-5">
+            <h2> Sudadera de borreguillo con capucha</h2>
+            <div class="b2">
+                <p id="t2">Mucho más asequible que el cuero auténtico, la polipiel imita a la perfección no solo su
+                    apariencia, sino también sus principales propiedades: es un material cómodo, resistente,
+                    aislante,
+                    transpirable y flexible. La imitación perfecta del cuero convierte una chaqueta, una cazadora
+                    o un abrigo en una prenda selecta. </p>
 
+                <p><a id="a_leer_2" href="guias.html">
+                    <img src="../imagenes/imagenLeerMas.JPG">
+                </a></p>
 
+                <div id="seguir_leyendo_2">
+                    <p>"LEYENDO2"Sudadera de borreguillo con capucha, media cremallera metálica,
+                        puños ajustados y bajo con cordón.
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div class="col-md-3">.col</div>
-        <div class="col-md-3" style="background-color:lavender;">.col</div>
-        <div class="col-md-3" style="background-color:lavender;">.col</div>
+        <div class="col-sm-3 text-center bg-primary  p-5">
+            <h2> Sudadera cropped con capucha</h2>
+            <div class="b3">
+                <p id="t3">Tela jersey es un tejido de punto que se utiliza principalmente para la fabricación de
+                    prendas de vestir.
+                    Originalmente estaba hecho de lana, pero ahora está hecho de lana, algodón y fibras sintéticas.
+                    Sudaderas•Capucha con cordones ajustables•Logo Ditadora en el frente•Mangas
+                    Largas•Sudadera Corte Alto•Medidas del </p>
+
+                <p><a id="a_leer_3" href="guias.html">
+                    <img src="../imagenes/imagenLeerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_3">
+                    <p>"LEYENDO1"Sudadera cropped con capucha ajustada por cordón, bordado en la parte delantera
+                        y puños acabados en rib elástico
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 text-justify bg-primary  p-5">
+            <h2> Suadera Tipo Primavera-Verano</h2>
+            <div class="b4">
+                <p id="t4">Las sudaderas de chica siguen triunfando esta temporada: básicas, de colores,
+                    con dibujos o estampadas. Elige las sudaderas de moda con o sin capucha, cortas,
+                    largas o con cremallera. </p>
+
+                <p><a id="a_leer_4" href="guias.html">
+                    <img src="../imagenes/imagenLeerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_4">
+                    <p>"LEYENDO1"Nos encantan en todos los colores: las sudaderas rosas, blancas,
+                        amarillas, rojas o grises para un look casual o practicar deporte.
+                    </p>
+                </div>
+            </div>
+        </div>
 
     </div>
+</div>
+
 </body>
 </html>

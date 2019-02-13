@@ -12,7 +12,18 @@ p {
 }
 
 /*Estilos de las etiquetas h1,h2,h3, img*/
-h1, h2, h3, img{
+h1{
+    text-align: center;
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #262626;
+    margin-bottom: 48px;
+}
+h2, h3, img{
     padding-left:20px;
     padding-right:20px;
 }
+.cuerpo{
+    margin-right: 2px;
+}
+
