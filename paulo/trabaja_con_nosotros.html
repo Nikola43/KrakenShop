@@ -18,277 +18,274 @@
     <script src="../js/bootstrap.min.js"></script>
 </head>
 <body>
-<header>
-    <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+<header class="video">
+    <div class="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <video autoplay="autoplay" muted="muted" loop="loop">
         <source src="focusing_clothes.mov" type="video/mp4">
     </video>
     <div class="container h-100">
         <div class="d-flex h-100 text-center align-items-center">
             <div class="w-100 text-white">
-                <h1 class="display-1">Trabaja con Kraken Shop</h1>
+                <h1 class="display-1">Colabora con Kraken Shop</h1>
                 <h1 class="display-4">Hazte distribudior oficial</h1>
             </div>
         </div>
     </div>
 </header>
-<section id="team" class="pb-5">
-    <div class="container">
-        <h5 class="section-title h1">OUR TEAM</h5>
-        <div class="row">
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
-                                    <h4 class="card-title">Malvina</h4>
-                                    <p class="card-text">Personal shopper de la empresa. Lleva un look diferente cada día.</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Sunlimetech</h4>
-                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-skype"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-google"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+<section id="servicios">
+    <div class="container-fluid">
+        <h2 class="section-title mb-2 h1">Servicios</h2>
+        <p class="text-center text-muted h5">Tener y mantener una correcta estrategia de marketing es crucial en un mercado de creciente evolución.</p>
+        <div class="row mt-5">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-1">
+                        <h3 class="card-title">Rápida distribución</h3>
+                        <p class="card-text">Nuestra red de distribución es la mas grande y rapida del mercado. Ten a tus clientes contentos con rápidos tiempos de entrega.</p>
+                     </div>
                 </div>
             </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png" alt="card image"></p>
-                                    <h4 class="card-title">Sunlimetech</h4>
-                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Sunlimetech</h4>
-                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-skype"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-google"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-2">
+                        <h3 class="card-title">I+D</h3>
+                        <p class="card-text">Nuestro departamento de investigación siempre esta a la última. Hacemos lo que ellos desean.</p>
+                     </div>
                 </div>
             </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png" alt="card image"></p>
-                                    <h4 class="card-title">Sunlimetech</h4>
-                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Sunlimetech</h4>
-                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-skype"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-google"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-3">
+                        <h3 class="card-title">Entregas verificadas</h3>
+                        <p class="card-text">Nuestro sistema de confirmación de entrega hará que no se pierda ningún paquete por el camino.</p>
+                     </div>
                 </div>
             </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_04.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Sunlimetech</h4>
-                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Sunlimetech</h4>
-                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-skype"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-google"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-4">
+                        <h3 class="card-title">Seguimientos de productos</h3>
+                        <p class="card-text">No hay nada como saber donde están tus pedidos en todo momento. Tus clientes sabrán el día y hora de entrega con presición.</p>
+                     </div>
                 </div>
             </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_05.png" alt="card image"></p>
-                                    <h4 class="card-title">Sunlimetech</h4>
-                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Sunlimetech</h4>
-                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-skype"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                <i class="fa fa-google"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-5">
+                        <h3 class="card-title">Atención telefónica</h3>
+                        <p class="card-text">Tenemos un servicio de atencion al cliente 24/7. Ponte en contacto con nosotros ante cualquier poblema. Nuestra prioridad eres tú.</p>
+                     </div>
                 </div>
             </div>
-            <!-- ./Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-6">
+                        <h3 class="card-title">Pagos seguros</h3>
+                        <p class="card-text">Protección SafeBuy en todos los pedidos realizados mediante la web.</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-7">
+                        <h3 class="card-title">Ultima temporada</h3>
+                        <p class="card-text">Todo nuestro catálogo es de la última temporada. !No te quedes pasado de moda¡.</p>
+                     </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-8">
+                        <h3 class="card-title">Gran comunidad</h3>
+                        <p class="card-text">Ya somos más de 1000 tiendas en toda España. Tu puedes ser la siguiente</p>
+                     </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-9">
+                        <h3 class="card-title">Nuestro logros nos avalan</h3>
+                        <p class="card-text">Ganadores del Fashion Clothes Award 5 años consecutivos. Toda nuestra ropa tiene una calidad superior.</p>
+                     </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
-<section class="my-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 mx-auto">
-                <p>fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
-                <p>fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
-                <p>fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
-                <p>fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
-                <p>fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
 
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active"
+             style="background-image: url('../imagenes/clothing.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-2">Tiendas con estilo</h3>
+                <p class="lead">Todas nuestras tiendas están decoradas por el interiorista Robin Makensi.</p>
+            </div>
+        </div>
+        <div class="carousel-item"
+             style="background-image: url('../imagenes/three.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-2">Elegancia</h3>
+                <p class="lead">Sienteté guapa con nuestra linea de moda Elegant Girl.</p>
+            </div>
+        </div>
+        <div class="carousel-item"
+             style="background-image: url('../imagenes/young.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-2">!Llega la primavera¡</h3>
+                <p class="lead">A partir del 1 de marzo tenemos disponible nuestro catálogo para el buen tiempo.</p>
+            </div>
+        </div>
+        <div class="carousel-item"
+             style="background-image: url('../imagenes/blouse.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-2">Camisas de caballero</h3>
+                <p class="lead">Se todo un caballero con nuestras camisas</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+    </a>
+</div>
+
+<section>
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-8 ">
+                <div class="row">
+                    <div class="col-sm-3 col-md-2 col-lg-2">
+                        <i class="lni lni-enter" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="col-sm-9 col-md-10 col-lg-10">
+                        <h1 class="heading">Regístrate Como Distribuidor</h1>
+                        <p>Solo tienes que registrarte para empezar a trabajar con nosotros. Solo 5 minutos de trabajo para toda una vida de colaboración.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3 col-md-2 col-lg-2">
+                        <i class="lni lni-user" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="col-sm-9 col-md-10 col-lg-10">
+                        <h1 class="heading">Elige Lo Que Quieres Vender</h1>
+                        <p>Selecciona entre una amplia gama de productos que quieres incorporar a tu tienda. Solo elige las categorías deseadas y nosotros nos encargamos del resto.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3 col-md-2 col-lg-2">
+                        <i class="lni lni-cloud-upload" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="col-sm-9 col-md-10 col-lg-10">
+                        <h1 class="heading">Upload Resume</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3 col-md-2 col-lg-2">
+                        <i class="lni lni-search" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="col-sm-9 col-md-10 col-lg-10">
+                        <h1 class="heading">Search Jobs</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card regform wow bounce animated" data-wow-delay="0.05s">
+                    <div class="card-body regform">
+                        <div class="myform form ">
+                            <div class="logo mb-3">
+                                <div class="col-md-12 text-center">
+                                    <h1 class="sign">Regístrate</h1>
+                                </div>
+                            </div>
+                            <form action="#" name="registration">
+                                <div class="form-group">
+                                    <label for="firstname">Nombre</label>
+                                    <input type="text"  name="firstname" class="form-control" id="firstname" placeholder="Introduce tu nombre">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname">Apellidos</label>
+                                    <input type="text"  name="lastname" class="form-control" id="lastname" placeholder="Introduce tus apellidos">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email"  class="form-control" id="email" placeholder="Introduce tu email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Contraseña</label>
+                                    <input type="password" name="password" id="password"  class="form-control" placeholder="Introduce tu contraseña">
+                                </div>
+                                <div class="col-md-12 text-center mb-3">
+                                    <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Registrarme</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
