@@ -1,4 +1,7 @@
 /*******ESTILO DE MENU@carolyne Fernandez*********/
+.row{
+    margin: 0;
+}
 .menu {
     width: 100%;
     position: absolute;
