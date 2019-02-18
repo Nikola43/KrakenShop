@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pantalón mujer</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/malvina/css_malvina.css"/>
+    <script src="../css/bootstrap.css"></script>
+    <style>
+        /*ocultar el seguir leyendo par mostrar cuando haga el onclick*/
+        #seguir_leyendo_1, #seguir_leyendo_2, #seguir_leyendo_3, #seguir_leyendo_4 {
+            display: none;
+        }
+    </style>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+
+        //comienzo de jQuery // de forma compacta
+       /ocultar y mostrar contenido principal
+    $(document).ready(function(){
+        $(".row a").click( function() {
+            var array=(this.id).split("_");
+            $("#seguir_leyendo_"+array[array.length-1]).show(500, function(){
+            $("#a_leer_"+array[array.length-1]).html("repliega");
+                $("#a_leer_"+array[array.length-1]).click( function() {
+                    if( $("#a_leer_"+array[array.length-1]).html() == "repliega"){
+                        $("#seguir_leyendo_"+array[array.length-1]).hide(1000, function(){
+                            $("#a_leer_"+array[array.length-1]).html("Seguir leyendo...");
+                        });  
+                    }
+                });
+            });
+        });
+    });
+
+
+    </script>
+</head>
+<body>
+
+<h1>GUIA JEANS LOS QUE MARCAN FIGURA PARA LA MUJER</h1>
+
+<div class="container bg-light">
+    <div class="row" id="row">
+        <div class="col-sm-3 p-2">
+            <h2>Los jeans slim hasta el infinito</h2>
+            <div class="b_1">
+                <p id="t1">Los <b>jeans slim </b>en todos sus estados: denim natural, stone, efecto desgastado,
+                    desteñido, gris, negro, rojo, camel…
+                    Te encantarán particularmente los jeans slim para llevarlos hasta el infinito en todos los
+                    colores.¿CÓMO LLEVARLO?
+                </p>
+
+                <p><a id="a_leer_1" href="pantalon_m.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_1">
+                    <p>
+                        Llévalo con una vuelta en los bajos combinados con botines, o rectos con bailarinas o zapatos de
+                        tacón.
+                        Para un look casual, combina los jeans slim con una camiseta loose estampada o un jersey
+                        oversize de punto.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 p-2">
+            <h2>Los jeans skinny denim</h2>
+            <div class="b_2">
+                <p id="t2">
+                    Los <b>jeans skinny denim </b>y su efecto «segunda piel» se actualizan a lo largo de las temporadas
+                    y de
+                    las colecciones con nuevos tejidos compuestos esencialmente de algodón y de elastano.¿CÓMO LLEVARLO?
+                </p>
+                <p><a id="a_leer_2" href="pantalon_m.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_2">
+                    <p>
+                        Los skinny en versión denim efecto desgastado, claro, más bien oscuro o natural se llevan tanto
+                        por el día en el trabajo como por la noche. Con una camiseta fantasía,
+                        una camisa para anudar en la cintura, un jersey ancho o incluso una blusa chic, ¡los skinny se
+                        llevan con absolutamente todo
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 p-2">
+            <h2>Los jeans skinny originales</h2>
+            <div class="b_3">
+                <p id="t3">Los <b>jeans skinny originales</b> están disponibles en numerosos colores: negro, gris o
+                    incluso
+                    camel para la temporada otoño-invierno, o en los tonos más llamativos y pasteles para la temporada
+                    primavera-verano.¿CÓMO LLEVARLO? </p>
+
+                <p><a id="a_leer_3" href="pantalon_m.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_3">
+                    <p>Los jeans skinny se actualizan a lo largo de las temporadas y forman parte de los imprescindibles
+                        de tus looks diarios. Prueba todos los tipos de zapatos: botines y low boots, tacones y
+                        sandalias de cuña...
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 p-2">
+            <h2>Los jeans rectos prefectos con todos los zapatos</h2>
+            <div class="b_4">
+                <p id="t4">Debido a que terminan por encima del pie, los <b>jeans rectos de mujer</b> permiten resaltar
+                    los zapatos. Para un estilo urbano, combínalo con unas zapatillas sportwear o de tela. Para un look más
+                    elegante, combínalos con zapatos de piel, de piel sintético o ante..¿COMO LLEVARLO? </p>
+
+                <p><a id="a_leer_4" href="pantalon_m.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_4">
+                    <p>Puedes optar por los jeans básicos denim claro, los washed, los stone-washed, los azules
+                        naturales, los azules oscuros o elegir un color neutro como el negro, el blanco o incluso
+                        el gris.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

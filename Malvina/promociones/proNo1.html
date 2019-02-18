@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zapatos mujer</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/malvina/css_malvina.css"/>
+    <script src="../../css/bootstrap.css"></script>
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+    <script>
+
+        //comienzo de jQuery //
+        $(document).ready(function () {
+            $("#imagen1").click(function (event) {
+                event.preventDefault();
+                var next_imagen = "../../imagenes/ropa_m.jpg";
+                $("#imagen1").attr("src", next_imagen);
+            });
+        });
+        /*var imagenes;
+
+        function cambiar() {
+
+            var i;
+            for (i = 0; i < imagenes.length; i++) {
+                var url = "../../imagenes/";
+                imagenes[i].src = url;
+            }
+        }
+        function inicializar() {
+            imagenes = [document.getElementById("imagen"), document.getElementById("Img1"), document.getElementById("Img2")];
+            setInterval(cambiar, 2000);
+
+        window.onload = inicializar;*/
+
+        var imagenes = (['../../imagenes/img1.jpg', '../../imagenes/img2.jpg', '../../imagenes/img3.jpg', '../../imagenes/img4.jpg']);
+
+        /**
+         * Funcion para cambiar la imagen y link
+         */
+        function rotarImagenes() {
+            // obtenemos un numero aleatorio entre 0 y la cantidad de imagenes que hay
+            var index = Math.floor((Math.random() * imagenes.length));
+
+            // cambiamos la imagen y la url
+
+            document.getElementById("imagen").src = "../../imagenes/imagenes/" + imagenes[index];
+        }
+
+        /**
+         * Función que se ejecuta una vez cargada la página
+         */
+        onload = function () {
+            // Cargamos una imagen aleatoria
+            rotarImagenes();
+
+            // Indicamos que cada 5 segundos cambie la imagen
+            setInterval(rotarImagenes, 5000);
+        }
+    </script>
+</head>
+<body>
+<div class="titulo">
+    <h1>CÓDIGOS PROMOCIONALES PIMKIE</h1>
+</div>
+
+
+<div class="container bg-white">
+    <div class="row">
+        <div class="col-lg-8  p-4">
+            <p>
+                <a href="#"><img src="../../imagenes/" id="imagen"></a>
+            </p>
+        </div>
+
+        <div class="col-md-8 p-2">
+            <h2>Cómo utilizar tu código Pimkie?</h2>
+            <p>
+                1. Elige tu talla y añade el artículo a la cesta.
+            </p>
+            <p>
+                2. En la etapa 1 de tu cesta, marca la casilla « ¿Tienes un código promocional ?
+            </p>
+            <p>
+                3. Introduce tu código promocional en la casilla y haz clic en OK para aplicar el descuento.
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zapatos mujer</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/malvina/css_malvina.css"/>
+    <script src="../css/bootstrap.css"></script>
+    <style>
+        /*ocultar el seguir leyendo par mostrar cuando haga el onclick*/
+        #seguir_leyendo_1, #seguir_leyendo_2, #seguir_leyendo_3, #seguir_leyendo_4 {
+            display: none;
+        }
+    </style>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+
+        //comienzo de jQuery // de forma compacta
+        $(document).ready(function () {
+
+            //para recogerme todos los enlaces
+            $('.b1 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+
+        });
+
+        $(document).ready(function () {
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b2 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+        });
+        $(document).ready(function () {
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b3 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+        });
+        $(document).ready(function () {
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b4 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+
+        });
+
+
+    </script>
+</head>
+<body>
+
+<h1>GUIAS DE TIPOS DE ZAPATOS PARA MUJER</h1>
+
+<div class="container bg-light">
+    <div class="row">
+        <div class="col-sm-3 p-2">
+            <h2>Peep Toes</h2>
+            <div class="b1">
+                <p id="t1">Los <b>“Peep-toes”</b> son un tipo de zapato que tiene una pequeña abertura en la punta y son
+                    ideales cuando quieres lucir elegante, pero no quieres que se acaloren demasiado tus pies.
+                </p>
+
+                <p><a id="a_leer_1" href="zapatos_m.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_1">
+                    <p>
+                        Además de verse sofisticados, suelen dar una apariencia de que la pierna es más larga.Ideal para
+                        vestidos y fietas de noche.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 p-2">
+            <h2>Botas negras</h2>
+            <div class="b2">
+                <p id="t2">
+                    Las <b>botas negras</b> pueden usarse hasta la rodilla o mitad de la pantorrilla. Son ideales para
+                    los días fríos y además
+                    combinan con casi todo, no importando si usas pantalón o vestido.
+                </p>
+                <p><a id="a_leer_2" href="pantalon_m.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_2">
+                    <p>
+                        Prefiere las con tacos cómodos para que puedas utilizarlas en toda ocasión, se
+                        llevan con absolutamente todo
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 p-2">
+            <h2>Ballerinas</h2>
+            <div class="b3">
+                <p id="t3">
+                    Usar tacos todos los días puede ser agotador. Dale un respiro a tus pies y un toque chic a tu look
+                    con <b>ballerinas</b> o “zapatillas de ballet”, pues combinan con casi todo lo que usas.
+                </p>
+
+                <p><a id="a_leer_3" href="pantalon_m.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_3">
+                    <p>
+                        Además son prácticas de llevar en la cartera cuando sales del trabajo o de una fiesta en que
+                        estuviste muchas horas con zapatos incómodos.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 p-2">
+            <h2>Sandalias con plataforma</h2>
+            <div class="b4">
+                <p id="t4">
+                    Las <b>sandalias con plataforma</b> son ideales para sentirte alta, cómoda y fresca, ya que puedes aumentar centímetros sin torturar tus pies.
+                </p>
+
+                <p><a id="a_leer_4" href="pantalon_m.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_4">
+                    <p>
+                        Puedes verte cómoda y chic al mismo tiempo. Además son ideales para usar con jeans.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

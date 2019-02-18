@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chaqueta mujer</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/malvina/css_malvina.css"/>
+    <script src="../css/bootstrap.css"></script>
+    <style>
+        /*ocultar el seguir leyendo par mostrar cuando haga el onclick*/
+        #seguir_leyendo_1, #seguir_leyendo_2, #seguir_leyendo_3, #seguir_leyendo_4 {
+            display: none;
+        }
+    </style>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+
+        //comienzo de jQuery // de forma compacta
+        $(document).ready(function () {
+
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b1 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+
+        });
+
+        $(document).ready(function () {
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b2 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+        });
+        $(document).ready(function () {
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b3 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+        });
+        $(document).ready(function () {
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b4 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+
+        });
+
+
+    </script>
+</head>
+<body>
+
+<h1>UNA CHAQUETA DE POLIPIEL PARA MUJER, ELEGANTE Y A LA MODA</h1>
+
+<div class="container bg-light">
+    <div class="row">
+        <div class="col-sm-3 p-2">
+            <h2> La chaqueta de polipiel para mujer, una prenda intemporal</h2>
+            <div class="b1">
+                <p id="t1">Mucho más ponible, Tela de seda, algodón o poliéster imita a la perfección no solo
+                    su apariencia, sino también sus principales propiedades: es un material cómodo, resistente,
+                    aislante, transpirable y flexible convierte una <b>chaqueta</b>, en una prenda selecta.
+                </p>
+
+                <p><a id="a_leer_1" href="chaquetas_mujer.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_1">
+                    <p>En la actualidad las <b>chaquetas</b> de polipiel para mujer tienden a ser cortas, para lucir
+                        una silueta esbelta y un look moderno. Diversos detalles subrayan la calidad del material:
+                        bolsillos con cremallera, filas de botones automáticos, cremalleras asimétricas, tachuelas y
+                        lentejuelas, costuras decorativas, etc
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 p-2">
+            <h2>La chaqueta corta </h2>
+            <div class="b2">
+                <p id="t2">La <b>chaqueta corta </b> mucho más asequible que el cuero auténtico, la polipiel imita a la
+                    perfección no solo su
+                    apariencia, sino también sus principales propiedades: es un material cómodo, resistente,
+                    aislante, transpirable y flexible. La imitación perfecta del cuero convierte una chaqueta,
+                    una cazadora o un abrigo en una prenda selecta.
+                </p>
+                <p><a id="a_leer_2" href="chaquetas_mujer.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_2">
+                    <p>Muy en boga en los últimos años, la chaqueta corta se luce remangada, sin abrochar y con una
+                        camiseta bonita, un vestido, un blusón o una camisa.
+                        Una prenda suave, moderna, cómoda, ligera y con una caída impecable.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 p-2">
+            <h2> La Cazadora</h2>
+            <div class="b3">
+                <p id="t3">Por su aire masculino, <b>la cazadora</b> se distingue por su corte ajustado y su calidez.
+                    Dotada de un forro del mismo tono, te protege del frío y del viento. El cuello de solapa o
+                    el cuello alto cerrado con un botón automático mejoran su estética. </p>
+
+                <p><a id="a_leer_3" href="chaquetas_mujer.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_3">
+                    <p>Disponible en una amplia gama de colores, la cazadora se adapta a la moda del momento.
+                        Preciosa en todas sus variantes: el negro, siempre de moda; el marrón, típicamente vintage; el
+                        beige, refinado; el burdeos,
+                        para marcar contrastes; el rosa claro, particularmente elegante...
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 p-2">
+            <h2> La chaqueta mixta</h2>
+            <div class="b4">
+                <p id="t4">Las <b>chaquetas mixtas</b> de polipiel para mujer adquieren
+                    un estilo distinto cuando se combinan dos materiales. Un cuello de punto,
+                    un canesú acolchado o los relieves en las mangas adornan una cazadora de estilo
+                    motero o perfecto en su justa medida. . </p>
+
+                <p><a id="a_leer_4" href="chaquetas_mujer.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_4">
+                    <p>Úsala, por ejemplo, para dar un toque informal, rockero y glamuroso a un traje de fiesta o de
+                        gala,
+                        o para estilizar un conjunto boho o hippie-chic.Nos encantan en todos los colores: iversos
+                        colores y elige la
+                        que mejor se adapte a tu cuerpo, tu tono de piel y tu personalidad..
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
