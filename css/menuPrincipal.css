@@ -44,7 +44,6 @@
   color: #fff; 
 }
 
-
 /*********@MEDIAS*************/
 @media (max-width: 990px) {
     .navbar-toggler span {
@@ -68,5 +67,5 @@
 }
 
 .bannerHeader {
-  background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)), url(../imagenes/portada/sliderMujerDetalle.jpg) no-repeat scroll center center;
+  background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)), url(../imagenes/general/sliderMujerDetalle.jpg) no-repeat scroll center center;
 }
