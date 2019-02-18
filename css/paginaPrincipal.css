@@ -12,7 +12,7 @@
 .banner {
     height:900px;
   display: flex;
-  background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)), url(../imagenes/portada/portada-slider.jpg) no-repeat scroll center center;
+  background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)), url(../imagenes/general/portada-slider.jpg) no-repeat scroll center center;
   background-size: cover;
 }
 
