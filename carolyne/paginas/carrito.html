@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>Carrito de Compra</title>
+          <!--BOOSTRAP E ICONOS-->
+        <script src="../js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css"/>
+        <!-- CSS propio -->
+        <link rel="stylesheet" href="../css/footer.css">
+		<link rel="stylesheet" href="../css/menuPrincipal.css">
+		<link rel="stylesheet" href="../css/detalles.css">
+ </head>
+<style>
+    .row{
+        margin: 0 !important;
+    }
+    thead ,tfoot{
+        background: rgba(0, 0, 0, 0.07);
+    }    
+    .table tbody tr td.image-prod .img {
+    display: block;
+    width: 100px;
+    height: 150px;
+    margin: 0 auto;
+            background-size: cover;
+
+}
+</style>
+  
+<body>   
+    
+	<header class="menu  header_area">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a class="navbar-brand" href="index.html"><img src="" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuDesplegable" >
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+              <div class="collapse navbar-collapse offset" id="menuDesplegable">
+                    <ul class="nav navbar-nav menu_nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">INICIO</a></li> 
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">SOBRE NOSOTROS</a></li> 
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" >MUJERES</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item "><a class="nav-link" href="pantalonesM.html">Pantalones</a>
+                                <li class="nav-item "><a class="nav-link" href="chaquetasM.html">Chaquetas</a>
+                                <li class="nav-item "><a class="nav-link" href="zapatosM.html">Zapatos</a>
+                            </ul>
+                        </li> 
+                        
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" >HOMBRES</a>
+                            <ul class="dropdown-menu">
+                                 <li class="nav-item "><a class="nav-link" href="pantalonesH.html">Pantalones</a>
+                                <li class="nav-item "><a class="nav-link" href="chaquetasH.html">Chaquetas</a>
+                                <li class="nav-item "><a class="nav-link" href="zapatosH.html">Zapatos</a>
+                            </ul>
+                        </li> 
+                         <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li> 
+
+                        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACTANOS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	</header>
+	<div class="jumbotron bannerHeader">
+		
+	</div>
+<section class="ftco-section ftco-cart">
+			<div class="container">
+				<div class="row">
+    			<div class="col-md-12">
+	    				<table class="table table-hover table-responsive">
+						    <thead>
+						      <tr class="text-center">
+						        
+						        <th colspan="2">Producto</th>
+						        <th>Precio</th>
+						        <th>Cantidad</th>
+						        <th>Total</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr class="text-center">
+						        
+						        <td class="image-prod"><div class="img" style="background-image:url(../imagenes/hombre/chaqueta/imagen1.jpg);"></div></td>
+						        
+						        <td class="product-name">
+						        	<h3>Chaqueta de Hombre</h3>
+						        	<p>Magnifica chaqueta de entretiempo de hombre bicolor</p>
+						        </td>
+						        
+						        <td class="precio">25,90€</td>
+						        
+						        <td>
+                                    <input id="spinner" name="value" value="1">
+					          </td>
+						        <p>
+  
+						        <td class="total">25,90€</td>
+						      </tr><!-- END TR-->
+
+						      <tr class="text-center">
+						        
+						        <td class="image-prod"><div class="img" style="background-image:url(../imagenes/mujeres/pantalones/imagen10.jpg);"></div></td>
+						        
+						        <td class="product-name">
+						        	<h3>Pantalon Cargos Bajos </h3>
+						        	<p>Pantalón cargo con bajos elásticos, bolsillos, cintura con trabilla y cierre de cremallera y botón.</p>
+						        </td>
+						        
+						        <td class="precio">29,99€</td>
+						        
+						         <td>
+                                    <input id="spisnner" name="value" value="1">
+					          </td>
+						        
+						        <td class="total">29,99€</td>
+						      </tr><!-- END TR-->
+						    </tbody>
+                             <tfoot>
+						      <tr class="text-center">
+						        
+						        <th colspan="4">Total</th>
+						        
+						        <td>58,89</td>
+						      </tr>
+						    </tfoot>
+						  </table>
+    			</div>
+    		</div>
+    
+			</div>
+		</section>
+
+<footer>
+
+    <div class="d-none d-lg-block">
+        <ul class="logos">
+            <li><a href="#"><img src="../imagenes/iconos/delivery.PNG"></a><span>Envio Gratuito</span></li>
+            <li><a href="#"><img src="../imagenes/iconos/devolucion.PNG"></a><span>Devoluciónes</span></li>
+            <li><a href="#"><img src="../imagenes/iconos/pago.PNG"></a><span>Pago seguro</span></li>
+            <li><a href="#"><img src="../imagenes/iconos/recogida.PNG"></a><span>Recojida en la tienda</span></li>
+            <li><a href="#"><img src="../imagenes/iconos/home.PNG"></a><span>Reserva en tienda</span></li>
+        </ul>
+    
+    </div>
+    <div class="row logo2">
+  
+    	   <div class="col-xs-12 col-sm-6 col-md-3">
+               <h6>Encuentra tu Tienda</h6>
+    		  <span>Descubre tu tienda mas cercana <a href="#"> Haz click Aqui</a></span> <img src="../imagenes/iconos/recogida.PNG">
+    		</div>
+    	   <div class="col-xs-12 col-sm-6 col-md-3">
+               <h6>Aplicación</h6>
+               <span>Descarga la aplicación ,<a href="#"> Haz click Aqui</a></span>
+               <img src="../imagenes/iconos/telefono.PNG">
+    		</div>
+    	   <div class="col-xs-12 col-sm-6 col-md-3">
+               <h6>Programa de Fidelización</h6>
+               <span>Descubre nuestro programa sorpresa lee mas, <a href="#">Haz click Aqui</a></span>
+               <img src="../imagenes/iconos/tarjeta.PNG">
+
+    		</div>
+    	   <div class="col-xs-12 col-sm-6 col-md-3">
+               <h6>Newsletter</h6>
+               <span>Novedades Fashion y promociones en Exclusiva</span>
+    		    <img src="../imagenes/iconos/arrobas.PNG">
+    		</div>
+			
+
+			
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<h6>Nuestras Garantias</h6>
+				<ul>
+					<li><a href="">Entrefa gratuita en la tienda</a></li>
+					<li><a href="">Pago seguro</a></li>
+					<li><a href="">Devoluciones y Cambios Gratuitos</a></li>
+					<li><a href="">Recogida gratuita en tienda</a></li>
+					<li><a href="">Reserva en tienda</a></li>
+					<li><a href="">Tarjeta Regalo</a></li>
+
+							
+				</ul>
+    		</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<h6>La Colección</h6>
+				<ul>
+					<li><a href="">Pantalones</a></li>
+					<li><a href="">Blusas</a></li>
+					<li><a href="">Chaquetas</a></li>
+					<li><a href="">Accesorios</a></li>	
+					<li><a href="">Zapatos</a></li>							
+					
+				</ul>
+
+ 
+    		</div><div class="col-xs-12 col-sm-6 col-md-3">
+				<h6>Guías</h6>
+				<ul>
+					<li><a href="">Piel Sintéctica</a></li>
+					<li><a href="">Túnicas</a></li>
+					<li><a href="">Plumíferos</a></li>
+					<li><a href="">Guía Jeans</a></li>
+					<li><a href="">Trench</a></li>
+					<li><a href="">Parkas</a></li>
+
+							
+				</ul>
+    		</div><div class="col-xs-12 col-sm-6 col-md-3">
+				<h6>Información Practica</h6>
+				<ul>
+					<li><a href="">Toda la colección</a></li>
+					<li><a href="">Codigo de descuento</a></li>
+					<li><a href="">Tendencias</a></li>
+					<li><a href="">LookBook</a></li>
+
+							
+				</ul>
+    		</div>
+    	   
+    </div>
+    
+    
+    <div class="row redes-sociales">
+            <div class="col-md-2" ><a href="" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a></div>
+            <div class="col-md-2"><a href="" class="google-plus"><i class="fa fa-google-plus"></i><span>g+plus</span></a></div>
+            <div class="col-md-2" ><a href="" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a></div>
+            <div class="col-md-2" ><a href="" class="facebook"><i class="fa fa-facebook"></i><span>facebook</span></a></div>
+            <div class="col-md-2" ><a href="" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a></div>
+            <div class="col-md-2" ><a href="" class="youtube"><i class="fa fa-youtube"></i><span>youtube</span></a></div>
+
+    </div>
+        
+        
+    
+</footer>
+
+    
+</body>
+</html>
