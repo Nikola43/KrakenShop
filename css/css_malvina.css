@@ -1,0 +1,156 @@
+/*Fuente para de las páginas*/
+body, p {
+    font-family: Verdana, Geneva, sans-serif;
+}
+/*Estilo de los parrafos*/
+p {
+    font-size: 15px;
+    line-height: 26px;
+    text-align: justify !important;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+/*Estilos de las etiquetas h1*/
+h1{
+    margin-top: 10px;
+    font-size: 35px;
+    color: #262626;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/*Estilos de las etiquetas h2,h3, i*/
+h2 {
+    padding-left:2px;
+    padding-right:10px;
+    color: #000000;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size:22px;
+}
+
+
+h3 {
+    padding-left:2px;
+    padding-right:10px;
+    color: #000000;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size:14px;
+    font-weight: bold;
+}
+/*estilo img seguir leyendo*/
+/*img{
+    padding-left:20px;
+    padding-right:20px;
+}*/
+/*estilos parrafo*/
+p{
+    padding-left:2px;
+    padding-right:2px;
+}
+
+/*Abarca toda la página al 100%*/
+.contenedor {
+    width:100%;
+    height:100%;
+}
+
+/*Incluye tanto el contenido como la barra lateral*/
+.contenido_web {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.titulo-promociones{
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 3em;
+    position: relative;
+    padding-top: 25px;
+    border-bottom: solid 2px #000000;
+}
+
+.contenido-promociones{
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+}
+
+.suscribete {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FAFAFA;
+    padding:20px;
+}
+
+.suscribete1{
+    float:left;
+    width: 100%;
+    font-weight: bold;
+    padding-bottom:10px;
+}
+
+.suscribete2{
+    float:left;
+    width: 100%;
+}
+
+.suscribete3{
+    float:left;
+    width: 50%;
+}
+
+.suscribete4{
+    float:left;
+    width: 50%;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+.btn:active, .btn:hover {
+    background: #e83e8c;
+    border-color: #d42e54;
+    color: #494f54;
+}
+
+.btn {
+    font-size: .875rem;
+    border: 2px solid #bd2130;
+    background: #c3002f;
+    color: #fff;
+    line-height: 24px;
+    font-weight: 100;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    overflow: hidden;
+    width: 50%;
+    border-radius: 0;
+    margin-left: 20px;
+}
+
+input {
+    font-size: 1rem;
+    border-radius: 0;
+    background: 110% 50% no-repeat #fff;
+    background-size: auto 45%;
+    line-height: 20px;
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #cdc9c7;
+}
+
+.formularioSuscribete {
+    width:100%;
+    padding-bottom:15px;
+}
+
+.texto-peque {
+    font-size: .725rem;
+    color: #393939;
+}

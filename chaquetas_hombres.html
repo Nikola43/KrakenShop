@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chaqueta Hombres</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/malvina/css_malvina.css"/>
+    <script src="../css/bootstrap.css"></script>
+    <style>
+        /*ocultar el seguir leyendo par mostrar cuando haga el onclick*/
+        #seguir_leyendo_1, #seguir_leyendo_2, #seguir_leyendo_3, #seguir_leyendo_4{
+            display: none;
+        }
+    </style>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+
+        //comienzo de jQuery // de forma compacta
+        $(document).ready(function () {
+
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b1 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+
+        });
+
+        $(document).ready(function () {
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b2 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+        });
+        $(document).ready(function () {
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b3 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+        });
+        $(document).ready(function () {
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b4 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+
+        });
+
+
+
+    </script>
+</head>
+<body>
+<div class="titulo">
+    <h1>UNA CAZADORA PARA HOMBRE, ELEGANTE Y A LA MODA</h1>
+</div>
+<div class="container bg-light">
+    <div class="row">
+        <div class="col-sm-3 p-2">
+            <h2> Cazadora Bolsillos</h2>
+            <div class="b1">
+                <p id="t1"> La <b>Cazadora</b> de cuello camisero y manga larga acabada en puño con botón.
+                    Bolsillos de plastrón con solapa en pecho y de vivo en cadera.
+                    Detalle bolsillo interior. Cierre frontal con cremallera.
+
+                </p>
+
+                <p><a id="a_leer_1" href="chaquetas_hombres.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_1">
+                    <p>Disponible en una amplia gama de colores, la cazadora se adapta a la moda del momento.
+                        Preciosa en todas sus variantes: el negro, siempre de moda; el marrón, típicamente vintage; el beige, refinado; el burdeos,
+                        para marcar contrastes; el rosa claro, particularmente elegante...
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 p-2">
+            <h2>Cazadora biker efecto pie</h2>
+            <div class="b2">
+                <p id="t2">La <b>cazadora biker efecto pie </b> ,cazadora biker confeccionada en tejido efecto piel. Cuello y solapas con manga larga acabada en puño con cremallera. Bolsillos frontales de cremallera.
+                </p>
+                <p><a id="a_leer_2" href="chaquetas_hombres.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_2">
+                    <p>Muy en boga en los últimos años, la cazadora, sin abrochar y con una camiseta bonita, un vestido, un blusón o una camisa.
+                        Una prenda suave, moderna, cómoda, ligera y con una caída impecable.
+                        Bajo acabado con detalle de trabillas. Cierre frontal asimétrico con cremallera.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 p-2">
+            <h2> Cazadora water repellent capucha</h2>
+            <div class="b3">
+                <p id="t3">Por su aire masculino, <b>la cazadora water repellent capucha</b> se distingue por su corte ajustado y su calidez.
+                    Dotada de un forro del mismo tono, te protege del frío y del viento. El cuello de solapa o
+                    el cuello alto cerrado con un botón automático mejoran su estética. </p>
+
+                <p><a id="a_leer_3" href="chaquetas_hombres.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_3">
+                    <p>Cazadora de cuello con capucha ajustable con cordón y manga larga.
+                        Bolsillos de vivo en cadera. Bajo ajustable. Cierre en delantero con cremallera.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 p-2">
+            <h2> La cazadora de cuadro</h2>
+            <div class="b4">
+                <p id="t4">La <b>Cazadora de cuadro</b> con cuello camisero y manga larga acabada en puño con botón.
+                    Bolsillos de plastrón en pecho y de vivo en cadera. Cierre frontal con cremallera. </p>
+
+                <a id="a_leer_4" href="chaquetas_hombres.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a>
+
+                <div id="seguir_leyendo_4">
+                    <p>Úsala, por ejemplo, para dar un toque informal, rockero y glamuroso a un traje de fiesta o de gala,
+                        o para estilizar un conjunto boho o hippie-chic.Nos encantan en todos los colores: iversos colores y
+                        elige la que mejor se adapte a tu cuerpo, tu tono de piel y tu personalidad..
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

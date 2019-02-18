@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pantalón hombre</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/malvina/css_malvina.css"/>
+    <script src="../css/bootstrap.css"></script>
+    <style>
+        /*ocultar el seguir leyendo par mostrar cuando haga el onclick*/
+        #seguir_leyendo_1, #seguir_leyendo_2, #seguir_leyendo_3, #seguir_leyendo_4 {
+            display: none;
+        }
+    </style>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+        // de forma compacta
+        $(document).ready(function () {
+
+            //para recogerme todos los enlaces
+            $('.b1 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+
+        });
+
+        $(document).ready(function () {
+            //para recogerme todos los enlaces
+            $('.b2 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+        });
+        $(document).ready(function () {
+            //para recogerme todos los enlaces
+            $('.b3 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+        });
+        $(document).ready(function () {
+            //para recogerme todos los enlaces
+            $('.b4 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+
+        });
+
+
+    </script>
+</head>
+<body>
+
+<h1>GUÍA JEANS UN ESTILO SÍMBOLO DE LIBERTAD PARA EL HOMBRE</h1>
+
+<div class="container bg-light">
+    <div class="row">
+        <div class="col-sm-3 p-2">
+            <h2> Los jeans slim hasta el infinito</h2>
+            <div class="b1">
+                <p id="t1">Los <b>jeans slim </b>en todos sus estados: denim natural, stone, efecto desgastado,
+                    desteñido,
+                    gris, negro, rojo, camel… Te encantarán particularmente los jeans slim para llevarlos hasta el
+                    infinito en todos los colores.
+                </p>
+
+                <p><a id="a_leer_1" href="pantalon_h.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_1">
+                    <p>Los jeans slim favorecen las piernas y dibujan una figura alargada.
+                        Ultra ajustados, estos pantalones realzan las formas.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 p-2">
+            <h2>Jeans skinny los clásicos </h2>
+            <div class="b2">
+                <p id="t2">Los <b>jeans skinny denim</b> y su efecto «segunda piel»
+                    se actualizan a lo largo de las temporadas y de las colecciones con nuevos tejidos compuestos
+                    esencialmente de algodón y de elastano.
+                </p>
+                <p><a id="a_leer_2" href="pantalon_h.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_2">
+                    <p>Mi skinny en versión denim efecto desgastado, claro, más bien oscuro o natural se llevan tanto
+                        por el día en el trabajo como por la noche. Con una camiseta fantasía,
+                        una camisa para anudar en la cintura, un jersey ancho o incluso una blusa chic, ¡los skinny se
+                        llevan con absolutamente todo!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 p-2">
+            <h2> Jeans rectos aútenticos e inimitables</h2>
+            <div class="b3">
+                <p id="t3">Los <b>jeans rectos</b> o regular son los jeans con uno de los cortes más clásicos.
+                    Tanto de día como de noche, los jeans straight son fáciles de llevar. Cómodos, ya que son menos
+                    ajustados que los skinny o los slim, los jeans rectos se adaptan a numerosas morfologías.
+                    Más clásicos que los boyfriend o los bootcut, tienen su sitio en el armario chic.
+                </p>
+
+                <p><a id="a_leer_3" href="pantalon_h.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_3">
+                    <p>Ya sean destroy, agujereados o rotos, los jeans rectos de hombre se muestran rebeldes
+                        y originales. Te encantará combinarlos con unas slip-on o con botas de tacón....
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 p-2">
+            <h2> Los jeans el estilo destroy</h2>
+            <div class="b4">
+                <p id="t4">Los  <b>jeans jeans destroy</b> debido a que terminan por encima del pie,
+                     permiten resaltar los zapatos. Para un estilo urbano. Para un look más elegante, combínalos con zapatos de piel, de piel sintético o ante.. . </p>
+
+                <p><a id="a_leer_4" href="chaquetas_mujer.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_4">
+                    <p>Los  jeans destroy, tienen su sitio en el armario chic. Disponibles en numerosos colores:
+                        elige colores oscuros para looks city y más claros o efecto desgastado para looks trendy...
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

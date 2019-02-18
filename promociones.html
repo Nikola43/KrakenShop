@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promociones</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/malvina/css_malvina.css"/>
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+    <script>
+
+        var imagenes = (['../../imagenes/img1.jpg', '../../imagenes/img2.jpg', '../../imagenes/img3.jpg', '../../imagenes/img4.jpg']);
+
+        /**
+         * Funcion para cambiar la imagen
+         */
+        function rotarImagenes() {
+            // obtenemos un numero aleatorio entre 0 y la cantidad de imagenes que hay
+            var index = Math.floor((Math.random() * imagenes.length));
+
+            // cambiamos la imagen y la url
+
+            document.getElementById("imagen").src = "../../imagenes/imagenes/" + imagenes[index];
+        }
+
+        /**
+         * Función que se ejecuta una vez cargada la página
+         */
+        onload = function () {
+            // Cargamos una imagen aleatoria
+            rotarImagenes();
+
+            // Indicamos que cada 5 segundos cambie la imagen
+            setInterval(rotarImagenes, 2000);
+        }
+    </script>
+</head>
+<body>
+<div class="titulo">
+    <h1>CÓDIGOS PROMOCIONALES KRAKEN SHOP</h1>
+</div>
+
+
+<div class="contenedor">
+    <div class="contenido_web">
+
+        <img src="../../imagenes/" id="imagen">
+
+        <div class="titulo-promociones">
+            <h2>Ofertas del momento</h2>
+        </div>
+        <div class="contenido-promociones">
+            <p>
+                Oferta válida en una selección de artículos del 02/01/2019 a las 08h00 al 06/03/2019 a las 12 de la
+                noche, válida en Kraken Shop, en la aplicación móvil y en nuestras tiendas, no acumulable a otras
+                ofertas promocionales en curso.
+            </p>
+            <p>
+                Dentro del límite de las existencias disponibles. De conformidad con los artículos 38 a 40 de la Ley
+                francesa sobre Informática y Libertades nº78-17 del 6 de enero de 1978, modificada por la Ley nº2004-801
+                del 6 de agosto de 2004.</p>
+            <P>
+                Puedes ejercer tu derecho de acceso, modificación o supresión de tus datos personales dirigiéndote a
+                KRAKEN SHOP - servicio de marketing de la Sociedad.
+            </p>
+        </div>
+        <div class="titulo-promociones">
+            <h2>Ventajas del programa de fidelidad</h2>
+        </div>
+        <div class="contenido-promociones">
+            <h3>CONDICIONES DE USO DEL CUPÓN 10%</h3>
+            <p>
+                Oferta válida presentando este cupón junto con la tarjeta de fidelidad en una de nuestras tienda Kraken
+                Shop España o en www.krakenshop.es y aplicación Kraken Shop. Descuento efectuado en caja.
+            </p>
+            <p>
+                Oferta no válida para la compra de bisutería, bonos regalo y tarjetas regalo. El cupón descuento es
+                utilizable una sola vez y no se puede cambiar, reembolsar ni fraccionar.
+            </p>
+            <P>
+                Cupones no acumulables entre sí. Oferta no acumulable con otras promociones, rebajas, ofertas especiales
+                en curso o artículos con precio redondo (acabado en 00 céntimos). DIMODES SAU. Parc Industrial Montmeló
+                Granollers. C/ Can Cabanyes s/n, 08160 Montmeló.
+            </p>
+        </div>
+        <div style="border-bottom: solid 2px #000000;">
+
+        </div>
+        <div class="suscribete">
+            <div class="suscribete1">
+                Suscríbete ahora al Newsletter de Kraken Shop y disfruta de un 10% de descuento*
+            </div>
+            <div class="formularioSuscribete">
+                <div class="suscribete2">Dirección de correo electrónico</div>
+                <div class="suscribete3">
+                    <input type="email" id="email" name="email" value="" title="Dirección de correo electrónico"
+                           placeholder="name@dirección-de-correo-electrónico.es" maxlength="50" minlength="3">
+                </div>
+
+                <div class="suscribete4">
+                    <a href="formulario.html">
+                        <button type="button" title="SUSCRÍBETE" class="btn" name="suscribete">
+                            SUSCRÍBETE
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="texto-peque">Pulsando el botón, te suscribirás a nuestro newsletter personalizado.
+                Utilizaremos tus datos personales conforme a nuestra Política de Privacidad del newsletter de Kraken
+                Shop.
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zapatos hombre</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/malvina/css_malvina.css"/>
+    <script src="../css/bootstrap.css"></script>
+    <style>
+        /*ocultar el seguir leyendo par mostrar cuando haga el onclick*/
+        #seguir_leyendo_1, #seguir_leyendo_2, #seguir_leyendo_3, #seguir_leyendo_4 {
+            display: none;
+        }
+    </style>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+
+        //comienzo de jQuery // de forma compacta
+        $(document).ready(function () {
+
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b1 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+
+        });
+
+        $(document).ready(function () {
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b2 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+        });
+        $(document).ready(function () {
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b3 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+        });
+        $(document).ready(function () {
+            //para recogerme todos los enlaces DE la pagina articulo
+            $('.b4 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+
+        });
+
+
+    </script>
+</head>
+<body>
+
+<h1>GUIA DE ZAPATOS PARA HOMBRE</h1>
+
+<div class="container bg-light">
+    <div class="row">
+        <div class="col-sm-3 p-2">
+            <h2>Zapatillas o Tenis Blancos.</h2>
+            <div class="b1">
+                <p id="t1">
+                    Las <b>zapatillas blancas</b> tipo sport son el complemento perfecto para looks informales. Un
+                    calzado
+                    cómodo que además, pega con todo. Esta revolución llega para traernos modelos que creíamos ya
+                    olvidados.
+                </p>
+
+                <p><a id="a_leer_1" href="zapatos_h.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_1">
+                    <p>
+                        No a todos los hombres les gustan. No todos los hombres se ven con ellas, para el verano son
+                        geniales, es la mejor elección.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 p-2">
+            <h2>Zapatos Brogue</h2>
+            <div class="b2">
+                <p id="t2">
+                    Estos tipos de zapatos <b>brogue</b> para hombre con cordones posee una costura y una puntera con un
+                    ala extendida
+                    a todo el zapato. Son unos zapatos masculinos e incluso femeninos de corte clásico, muy elegantes.
+                    Son menos formales que los Oxford. Puedes usarlos con vaqueros o trajes, pegan con todo.
+                </p>
+                <p><a id="a_leer_2" href="zapatos_h.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_2">
+                    <p>
+                        Siempre irás bien vestido en cualquier ocasión. Los típicos son de piel y con tonos negro,
+                        marrones o chocolate, pero ya existen variaciones más modernas con otros colores y tejidos.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 p-2">
+            <h2>Mocasines</h2>
+            <div class="b3">
+                <p id="t3">
+                    Los <b>mocasines</b> son zapatos de caballero son muy socorridos para cualquier ocasión. No son tan
+                    formales y
+                    elegantes. Pero la verdad es que siempre quedan bien.
+                    Este tipo de calzado es muy versátil para ir a trabajar, salir a dar una vuelta o de cena con los
+                    amigos.
+                <p><a id="a_leer_3" href="pantalon_m.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_3">
+                    <p>
+                        Con unos jeans, con pantalones de pinza o un traje más informal sin corbata son los conjuntos
+                        que más combinan con los mocasines. Son perfectos sobre todo en verano por ser zapatos frescos.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 p-2">
+            <h2>Zapatos casual,</h2>
+            <div class="b4">
+                <p id="t4">
+                    Los <b>zapatos casual</b> los puedes combinar con unos jeans.tipos-de-zapatos-para-hombres
+                    Los Derbi son otro tipos de zapatos para hombre elegantes y normalmente de cordones.
+                </p>
+
+                <p><a id="a_leer_4" href="pantalon_m.html">
+                    <img src="../imagenes/leerMas.JPG">
+                </a></p>
+
+                <div id="seguir_leyendo_4">
+                    <p>
+                        Estos se caracterizan por su costura de la parte lateral, que va cosida por fuera hacia la parte delantera.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>programa de fidelizacion | Kraken Shop</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+<script src="jquery-3.2.1.min.js"></script>
+<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+ 
+
+
+    <style>
+        body{
+            font-family:'Adobe Fan Heiti Std B', 'Arial Narrow', Arial, sans-serif;
+        }
+        .centro{
+            text-align: center;
+        }
+        .contenido{
+            background: url("../imagenes/imagenFidelizacion.jpg") no-repeat;
+            width: 100%;
+            height: 120vh;
+        }
+        .formulario{
+            position:relative;
+            display:block;
+            margin:10%;
+            margin-top:10%;
+            padding: 4%;
+            float:left;
+            min-height:300px;
+            width:500px;
+            background:rgba(218, 218, 218, 0.5);
+        }
+        .formulario:hover{
+            background:rgba(218, 218, 218, 0.6);
+        }
+       
+    </style>
+    </head>
+    <body>
+        <h1 class="centro">Programa de fidelizacion</h1>
+        <div  class="contenido">
+            <div class="formulario container-fluid table-responsive was-validated">
+                <form>
+                    <hr>
+                    <div class="form-group">
+                      <label for="correo">CORREO ELECTRONICO</label>
+                      <input type="email" class="form-control is-valid" id="correo" placeholder="introdice el correo" aria-describedby="emailHelp"  data-toggle="tooltip" data-placement="bottom" title="introdice el correo" required>
+                      <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo electrónico con nadie más..</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">DNI</label>
+                      <input type="password" class="form-control is-valid" id="exampleInputPassword1" placeholder="introdice el DNI" data-toggle="tooltip" data-placement="bottom" title="introdice el DNI" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">NUMERO DE TARJETA</label>
+                        <input type="password" class="form-control is-valid" id="exampleInputPassword1" placeholder="introduce el numero de tarjeta" data-toggle="tooltip" data-placement="bottom" title="introdice el numero de tarjeta" required>
+                      </div>
+                   
+                    <button id="boton" type="submit" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="enviar">Enviar</button>
+                  </form>
+                <hr>
+                
+            </div>
+        </div>
+        
+
+        
+    </body>
+
+
+</html>
