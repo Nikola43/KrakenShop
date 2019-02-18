@@ -1,12 +1,13 @@
 .bloqueFondo {
-    background-image: url(../imagenes/opiniones/fondo.jpg);
-    background-color: darkblue;
+    background-image: url(../imagenes/general/fondo.jpg);
     height: 60px;
     display: block !important;        
 }
 .contenido {
-   border: 1px solid lightgrey;
+ width: 200px;
+    border: 1px solid lightgrey;
     border-radius: 5%;
+    height: 160px;
 }
 
 .logo {
@@ -17,12 +18,7 @@
     border-radius: 7px;
 }
 
-
-.contenidoSeguidores{
-     margin-left: 10%;
-    padding-left: 1%;
-}
-        
+    
 .contenidoSeguidores p{
         padding: 3%;
     display: table-cell;
@@ -38,10 +34,12 @@
         
 .contenidoSeguidores p span:nth-child(1) {
     font-weight: bold;
-                color:gray;
+    color:gray;
 
 }
 .contenidoSeguidores p span:nth-child(2) {
         color:blue;
 }
+
+
    
