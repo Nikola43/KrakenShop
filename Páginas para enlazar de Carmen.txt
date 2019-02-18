@@ -1,0 +1,17 @@
+
+---------------------------------
+ENVIO GRATUITO A TIENDA
+---------------------------------
+entrega.html
+
+
+---------------------------------
+NEWSLETTER
+---------------------------------
+newsletter.html
+
+
+---------------------------------
+DEVOLUCIÓN Y CAMBIO GRATUITOS
+---------------------------------
+cambiosYdevoluciones.html
