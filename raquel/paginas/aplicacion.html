@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aplicacion | Kraken Shop</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+<script src="jquery-3.2.1.min.js"></script>
+<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    
+    <style>
+        body{
+            font-family:'Adobe Fan Heiti Std B', 'Arial Narrow', Arial, sans-serif;
+        }
+        h1, .centro{
+            text-align: center;
+            margin: 5%;
+        }
+        .enlace{
+            text-decoration: none;
+            padding:20px;
+            background: black;
+            color: white;
+            border-radius: 15px;
+        }
+        .enlace:hover{
+            background: rgb(82, 82, 82);
+            text-decoration: none;
+            color: white;
+        }
+        .iconos{
+            width: 25px;
+        }
+       
+        @keyframes mover{
+               
+               0%{
+                   transform: translateX(0px);
+               }
+               50%{
+                   transform:  translateX(10px);
+               }
+               
+               100%{
+                   transform:  translateX(0px);
+               }
+        }
+     
+        
+        #texto{
+          padding:26%;
+        }
+        
+        #sortable { 
+            list-style-type: none; 
+            margin: 0; 
+            padding: 0; 
+            width: 80%; 
+        }
+        #sortable li { 
+            margin: 0 3px 3px 3px; 
+            padding: 1em;
+            padding-left: 2em; 
+            padding-bottom: 2em;
+            font-size: 1em; 
+            height: 25px; 
+            background: rgb(209, 209, 209);
+            border:1px solid gray;
+            cursor: pointer;
+        }
+        #sortable li:hover{
+            background: rgb(218, 218, 218);
+        }
+        #sortable li span { 
+            position: absolute; 
+            margin-left: -1.3em; 
+        }
+    </style>
+    <script>
+        $( function() {
+            $( "#sortable" ).sortable();
+            $( "#sortable" ).disableSelection();
+        } );
+    </script>
+    <body>
+        <h1>NEW KRAKEN SHOP APPS</h1>
+        
+        <p class="centro">
+            <a class="enlace" href="https://www.apple.com/es/ios/app-store/"><img class="iconos" src="../imagenes/apple.png"> App Store</a>
+            <a class="enlace" href="https://play.google.com/store?hl=es_419"><img class="iconos" src="../imagenes/google-play.png">Google play</a>
+        </p>
+        
+ 
+      
+            <div class="row">
+              <div class="col text-left table-success p-5">
+                <img  src="../imagenes/aplicacion1.png">
+              </div>
+              <div class="col text-left table-success p-5" id="sortable" >
+                
+                <h3 >EN CUALQUIER MOMENTO Y ESTES DONDE ESTES</h3>
+                <ul id="sortable" >
+                    <li><img src="../imagenes/tick.png">Ahora <b>compro</b> desde mi aplicacion.</li>
+                    <li><img src="../imagenes/tick.png"><b>Escanear</b> productos en la tienda</li>
+                    <li></span><img src="../imagenes/tick.png">Mis ventajas de <b>fidelidad</b> siempre conmigo</li>
+                    <li></span><img src="../imagenes/tick.png"><b>Tendencias</b>, previews...</li>
+                </ul>
+               
+            </div>
+            </div>
+      
+            <div class="row">
+              <div class="col text-left  p-5" >
+                  <div id="texto">
+
+                <h3>NEW SHOPPING</h3>
+                <p >Recorre todas las colecciones, elige y compra directamente tus key looks desde tu smartphone.</p>
+                  </div>
+              </div>
+              <div class="col text-left  p-5">
+                <img  src="../imagenes/aplicacion2.png">
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="col text-left table-success p-5">
+                <img src="../imagenes/aplicacion3.png">
+              </div>
+              <div class="col text-left table-success p-5" id="texto">
+                <p id="texto">Tu tarjeta de fidelidad, ventajas y todos tus tickets de compra virtuales, directamente utilizables en tienda... ¡Es asi de facil!</p>
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="col text-left  p-5" id="texto">
+                  <div id="texto">
+                <h3 >NEW SCAN</h3>
+                <p >Te has enamorado de algo en la tienda, pero tu talla no está disponible. Don't worry! Solo tienes que escanear el codigo de barras y consultar en el momento la ficha del producto y la disponibilidad de las tallas</p>
+              </div>
+              </div>
+              <div class="col text-left p-5">
+                <img  src="../imagenes/aplicacion4.png">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col text-left table-success p-5">
+                    <img  src="../imagenes/aplicacion5.png">
+                </div>
+                <div class="col text-left table-success p-5" id="texto">
+                    <div id="texto">
+                    <h3 >IDEAS, ENTRE BASTIDORES, PRIMICIAS</h3>
+                    <p >Descubre los entresijos de las tendencias de moda y dejate sorprender cada lunes con nuestro hashtag #ITSMONDAY</p>
+                </div>
+                </div>
+              </div>
+          </div>
+    </body>
+
+
+</html>
