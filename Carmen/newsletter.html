@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    
+    <title>Newsletter | Kraken Shop</title>
+
+    <!-- CSS: Bootstrap, jQuery -->
+    <link rel="stylesheet" href="bootstrap-4.3.0-dist/css/bootstrap.min.css"> 
     <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+     
+    <!-- 1º jQuery -->
+    <script src="bootstrap-4.3.0-dist/js/jquery-3.3.1.js"></script>
+    <!-- 2º Popper.js -->
+    <script src="bootstrap-4.3.0-dist/js/popper.min.js"></script>
+    <!-- 3º Bootstrap JS -->
+     <script src="bootstrap-4.3.0-dist/js/bootstrap.min.js"></script>
+
 
     <!--Estilos-->
     <style>
@@ -22,6 +32,10 @@
             margin: 5%;
         }
 
+        button{
+            float: left;
+        }
+
 
     </style>
 
@@ -31,38 +45,84 @@
     <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
     <script src="jquery-ui-1.12.1/external/jquery/jquery.js"></script>
     <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
- <script>
-        
-        $(function(){
-            $("#datepicker").datepicker();
-        });
+    <script>
+            $(function(){
+                $("#datepicker").datepicker();
+            });
 
-        $(function(){
-            $("input").checkboxradio();
-        });
+            $(function(){
+                $("input").checkboxradio();
+            });
     </script>
-    <H2>INSCRIPCIÓN A LA NEWSLETTER</H2>
-    <div class="newsletter1">
-        <form>
-            E-MAIL: <BR> <input type="text" name="nombre" size="25" maxlength="50"> <BR><BR>
-            APELLIDO: <BR><input type="text" name="apellidos" size="35" maxlength="100"> <BR><BR>
-            NOMBRE: <BR><input type="text" name="nombre" size="25" maxlength="50"> <BR><BR>
-            FECHA DE NACIMIENTO: <BR> <input type="text" id="datepicker">
-        </form>
-    </div>
 
-    <div class="newsletter2">
-            <fieldset>
-              <legend>Sexo:</legend>
-                <label for="checkbox-1">Hombre</label>
-                <input type="checkbox" name="checkbox-1" id="checkbox-1">
+    <style>
+        h1{
+            text-align: center;
+        }
+        
+    </style>
 
-                <label for="checkbox-2">Mujer</label>
-                <input type="checkbox" name="checkbox-2" id="checkbox-2">
-            </fieldset>
-    </div>
+<div class="container">
+        <h1>INSCRIPCIÓN A LA NEWSLETTER</h1>
+    <form>
+        <!--Primera fila:-->
+        <h5>DATOS PERSONALES</h5><br>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="nombre1">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+            </div>
 
-    
+            <div class="form-group col-md-4">
+                <label for="nombre2">Primer apellido</label>
+                <input type="text" class="form-control" id="apellido1" placeholder="1º Apellido">
+            </div>
+            
+            <div class="form-group col-md-4">
+                <label for="nombre3">Segundo apellido</label>
+                <input type="text" class="form-control" id="apellido2" placeholder="2º Apellido">
+            </div>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputAddress">Fecha de Nacimiento</label>
+            <input type="text" class="form-control" id="datepicker">
+        </div>
+
+        <!--Segunda fila:-->
+        <h5>DIRECCIÓN</h5><br>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="ciudad">Ciudad</label>
+                <input type="text" class="form-control" id="ciudad" placeholder="Ciudad">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="provincia">Provincia</label>
+                <input type="text" class="form-control" id="provincia" placeholder="Provincia">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="cp">Codigo Postal</label>
+                <input type="text" class="form-control" id="cp" placeholder="Codigo postal">
+            </div>
+        </div>
+
+
+        <!--Tercera fila:-->
+        <h5>CORREO ELECTRÓNICO</h5><br>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            </div>
+        </div>
+
+
+        <!--Cuarta fila:-->
+        <button type="submit" class="btn btn-primary">CONFIRMAR</button>
+    </form>
 
     <script src="jquery-ui-1.12.1/external/jquery/jquery.js"></script>
     <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
