@@ -1,0 +1,200 @@
+ /**********estilos de filtro*******/
+.categoria a:hover{
+        text-decoration: none;
+        color: gray;
+}
+  .categoria a{
+      font-weight: 500;
+      font-size: 12px;
+      color: black;
+    }
+.head{
+    line-height: 60px;
+    background: #f51167;
+    padding: 0 30px;
+    font-size: 16px;
+      width: 100%;
+    font-weight: 700;
+    color: #fff;
+    }
+    
+.categoria{
+        padding: 0 20px;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(153, 153, 153, 0.1);
+}
+.categoria li{
+    list-style: none;
+}
+
+.categoria li a{
+    font-size: 14px;
+    display: block;
+    line-height: 50px;
+    padding-left: 10px;
+    border-bottom: 1px solid #eee;
+}
+.categoria li a span{
+
+    margin-right: 10px;
+    display: none;
+}
+ 
+.talla{
+    display: block !important;
+}
+#inputRango {
+    text-align: center;
+    width: 100%;
+    border: 0;
+    color: #f6931f;
+    font-weight: bold;
+}
+    
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+    border: 1px solid palevioletred !important;
+background: palevioletred !important;
+}
+ #selectOrdena {
+    width: 30%;
+    margin: 2%;
+    float: left;
+}
+#paginacion{
+    width: 30%;
+    margin: 2%;
+    float: left;
+}
+#paginacion a{
+   color: gray;
+}
+
+.page-item.active .page-link {
+    background-color: palevioletred;
+    border-color: palevioletred;
+}
+.colores label {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.colores  label.gray {
+	background: gray;
+}
+
+.colores  label.orange {
+	background:orange;
+}
+
+.colores  label.yellow {
+	background:yellow;
+}
+
+.colores  label.green {
+	background: green;
+}
+
+.colores  label.purple {
+	background: purple;
+}
+
+.colores  input[type=checkbox] {
+	visibility: hidden;
+	position: absolute;
+}
+
+.colores  input[type=checkbox]:checked+label {
+    border: 3px solid;
+    border-color: #f51167;
+
+}
+
+/*************CATALOGO******/
+    
+.precio{/*PRECIO REBAJADO*/
+    color:#000;
+    font-size:16px;
+    letter-spacing:1px;
+    font-weight:600;
+    margin-right:2px;
+    display:inline-block
+}
+ .precio span{/*PRECIO REAL*/
+     color:#909090;
+     font-size:14px;
+     font-weight:500;
+     letter-spacing:0;
+     text-decoration:line-through;
+     text-align:left;
+     display:inline-block;
+     margin-top:-2px
+}
+ .contenidoProducto h3{
+     font-size:15px;
+     font-weight:600;
+     text-transform:capitalize;
+}
+    
+    /**************************/
+.producto{
+   text-align:center;
+   position:relative;
+}
+
+.producto .imagen{
+    position:relative
+}
+.producto .imagen img{
+    width:100%;
+}
+.producto:hover .contenidoProducto{
+    display: none;
+}
+
+.producto:hover .imagen{
+        box-shadow: 0 10px 10px rgba(153, 153, 153, 0.1);
+
+}
+
+.producto .imagen2{
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+}
+.producto:hover .imagen2{
+    opacity:1
+    }
+.producto .icono {
+    padding: 0;
+    margin: 0 auto; 
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -23px;
+    transform: scale(0);
+}
+
+.producto:hover .icono{
+    opacity:1;
+    transform:scale(1)
+}
+.producto .icono li{
+    display:inline-block;
+}
+    
+.producto .icono li a:hover{
+    background:gray;
+    color:#fff
+}
+.producto .icono li a{
+    color: black;
+    background: #fff;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    display: block;
+}
