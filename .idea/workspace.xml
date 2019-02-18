@@ -25,8 +25,9 @@
     <leaf>
 <<<<<<< Updated upstream
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/paginas/trabaja_con_nosotros.html">
+        <entry file="file://$PROJECT_DIR$/paginas/condiciones_generales.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="25">
               <caret line="44" column="64" lean-forward="true" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
 =======
@@ -72,6 +73,10 @@
             <state relative-caret-position="78">
               <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
 >>>>>>> Stashed changes
+=======
+            <state relative-caret-position="225">
+              <caret line="96" selection-start-line="96" selection-end-line="96" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -85,8 +90,17 @@
     <option name="CHANGED_PATHS">
       <list>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/paginas/trabaja_con_nosotros.html" />
+=======
+>>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/paginas/trabaja_con_nosotros.html" />
+        <option value="$PROJECT_DIR$/css/trabaja_con_nosotros.css" />
+        <option value="$PROJECT_DIR$/css/test.css" />
+        <option value="$PROJECT_DIR$/paginas/faq.html" />
+        <option value="$PROJECT_DIR$/paginas/test.html" />
+        <option value="$PROJECT_DIR$/paginas/condiciones_generales.html" />
       </list>
     </option>
   </component>
@@ -137,6 +151,14 @@
             <path>
               <item name="KrakenShop" type="b2602c69:ProjectViewProjectNode" />
               <item name="KrakenShop" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
+=======
+              <item name="imagenes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KrakenShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KrakenShop" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
               <item name="paginas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -152,9 +174,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< Updated upstream
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550512684563" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550513355311" />
+>>>>>>> Stashed changes
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -181,6 +207,7 @@
       <updated>1550505440238</updated>
       <workItem from="1550505455464" duration="779000" />
       <workItem from="1550507335003" duration="249000" />
+<<<<<<< Updated upstream
       <workItem from="1550507596471" duration="812000" />
 =======
       <updated>1550508300572</updated>
@@ -188,14 +215,21 @@
       <workItem from="1550508680931" duration="20000" />
       <workItem from="1550508782203" duration="3841000" />
 >>>>>>> Stashed changes
+=======
+      <workItem from="1550507596471" duration="5204000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="1840000" />
 =======
     <option name="totallyTimeSpent" value="4189000" />
+>>>>>>> Stashed changes
+=======
+    <option name="totallyTimeSpent" value="6232000" />
 >>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
@@ -244,8 +278,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/trabaja_con_nosotros.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="159" column="1" selection-start-line="159" selection-start-column="1" selection-end-line="159" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/paginas/trabaja_con_nosotros.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="25">
           <caret line="44" column="64" lean-forward="true" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
 =======
@@ -329,6 +371,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="8" column="73" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
+>>>>>>> Stashed changes
+=======
+        <state relative-caret-position="140">
+          <caret line="212" column="22" lean-forward="true" selection-start-line="212" selection-start-column="22" selection-end-line="212" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginas/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="31" column="49" lean-forward="true" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/condiciones_generales.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="313" column="25" selection-start-line="313" selection-start-column="25" selection-end-line="313" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paginas/condiciones_generales.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
 >>>>>>> Stashed changes
         </state>
       </provider>

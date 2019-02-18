@@ -50,6 +50,7 @@ section {
 
 /* ------------------------------------- Secciones  ------------------------------------- */
 
+/* ------------------------------------- Carrousel  ------------------------------------- */
 .carousel-item {
     height: 100vh;
     min-height: 350px;
@@ -60,6 +61,7 @@ section {
     background-size: cover;
 }
 
+/* ------------------------------------- Carrousel  ------------------------------------- */
 
 section .section-title {
     text-align: center;
@@ -143,18 +145,6 @@ section .section-title {
     content: "\f09d";
 }
 
-#servicios .card .block-7:before {
-    content: "\f133";
-}
-
-#servicios .card .block-8:before {
-    content: "\f0c0";
-}
-
-#servicios .card .block-9:before {
-    content: "\f091";
-}
-
 #servicios .card:hover .card-block:before {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -167,8 +157,4 @@ section .section-title {
     section {
         height: auto
     }
-}
-
-#s2 {
-    margin-top: 25px;
 }
