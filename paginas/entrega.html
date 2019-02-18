@@ -34,13 +34,11 @@
     
 </head>
 <body>
-    <!--------MENU------->
+<!--------MENU------->
 <div>
         <header class="menu  header_area">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <a class="navbar-brand" href="index.html"><img src="" alt=""></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuDesplegable" >
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -49,7 +47,14 @@
                         <div class="collapse navbar-collapse offset" id="menuDesplegable">
                             <ul class="nav navbar-nav menu_nav ml-auto">
                                 <li class="nav-item active"><a class="nav-link" href="index.html">INICIO</a></li> 
-                                <li class="nav-item"><a class="nav-link" href="nosotros.html">SOBRE NOSOTROS</a></li> 
+                                <li class="nav-item submenu dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" >SOBRE NOSOTROS</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item "><a class="nav-link" href="nosotros.html">Quienes somos</a>
+                                        <li class="nav-item "><a class="nav-link" href="trabaja_con_nosotros.html">Trabaja con Nosotros</a>
+                                        <li class="nav-item "><a class="nav-link" href="formulario.html">Contactanos</a>
+                                    </ul>
+                                </li> 
                                 <li class="nav-item submenu dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" >MUJERES</a>
                                     <ul class="dropdown-menu">
@@ -67,18 +72,17 @@
                                         <li class="nav-item "><a class="nav-link" href="zapatosH.html">Zapatos</a>
                                     </ul>
                                 </li> 
-                                 <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> 
+                                 <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li> 
         
-                                <li class="nav-item"><a class="nav-link" href="contact.html">CONTACTANOS</a></li>
                             </ul>
                         </div> 
                     </div>
                 </nav>
             </header>
 
-            <div class="jumbotron bannerHeader">
-		
-            </div>
+        <div class="jumbotron bannerHeader">
+
+        </div>
 </div>
     
     <div class="container">
@@ -222,54 +226,56 @@
     </div>
 
 
-    <!--Footer-->
+<!--Footer-->
     
-    <footer>
-            <div class="d-none d-lg-block">
+<footer>
 
-                <ul class="logos">
-                    <li><img src="../imagenes/iconos/delivery.PNG"><span>Envio Gratuito</span></li>
-                    <li><a href="cambiosYdevoluciones.html"><img src="../imagenes/iconos/devolucion.PNG"></a><span>Devoluciónes</span></li>
-                    <li><a href="pagoSeguro.html"><img src="../imagenes/iconos/pago.PNG"></a><span>Pago seguro</span></li>
-                    <li><img src="../imagenes/iconos/recogida.PNG"><span>Recojida en la tienda</span></li>
-                    <li><a href="encuentra_tu_tienda.html"><img src="../imagenes/iconos/home.PNG"></a><span>Reserva en tienda</span></li>
-                </ul>
-            </div>
-
-            <div class="row logo2">
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <h6>Encuentra tu Tienda</h6>
-                    <span>Descubre tu tienda mas cercana <a href="encuentra_tu_tienda.html"> Haz click Aqui</a></span> <img src="../imagenes/iconos/recogida.PNG">
+        <div class="d-none d-lg-block">
+            <ul class="logos">
+                <li><img src="../imagenes/iconos/delivery.PNG"><span>Envio Gratuito</span></li>
+                <li><a href="cambiosYdevoluciones.html"><img src="../imagenes/iconos/devolucion.PNG"></a><span>Devoluciónes</span></li>
+                <li><a href="pagoSeguro.html"><img src="../imagenes/iconos/pago.PNG"></a><span>Pago seguro</span></li>
+                <li><img src="../imagenes/iconos/recogida.PNG"><span>Recojida en la tienda</span></li>
+                <li><a href="encuentra_tu_tienda.html"><img src="../imagenes/iconos/home.PNG"></a><span>Reserva en tienda</span></li>
+            </ul>
+        
+        </div>
+        <div class="row logo2">
+      
+               <div class="col-xs-12 col-sm-6 col-md-3">
+                   <h6>Encuentra tu Tienda</h6>
+                  <span>Descubre tu tienda mas cercana <a href="encuentra_tu_tienda.html"> Haz click Aqui</a></span> <img src="../imagenes/iconos/recogida.PNG">
                 </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <h6>Aplicación</h6>
-                    <span>Descarga la aplicación ,<a href="aplicacion.html" target="_blank"> Haz click Aqui</a></span>
-                    <img src="../imagenes/iconos/telefono.PNG">
+               <div class="col-xs-12 col-sm-6 col-md-3">
+                   <h6>Aplicación</h6>
+                   <span>Descarga la aplicación ,<a href="aplicacion.html" target="_blank"> Haz click Aqui</a></span>
+                   <img src="../imagenes/iconos/telefono.PNG">
                 </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <h6>Programa de Fidelización</h6>
-                    <span>Descubre nuestro programa sorpresa lee mas, <a href="programaDeFidelizacion.html" target="_blank">Haz click Aqui</a></span>
-                    <img src="../imagenes/iconos/tarjeta.PNG">
+               <div class="col-xs-12 col-sm-6 col-md-3">
+                   <h6>Programa de Fidelización</h6>
+                   <span>Descubre nuestro programa sorpresa lee mas, <a href="programaDeFidelizacion.html" target="_blank">Haz click Aqui</a></span>
+                   <img src="../imagenes/iconos/tarjeta.PNG">
+    
                 </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <h6>Newsletter</h6>
-                    <span>Novedades Fashion y promociones en Exclusiva</span>
-                    <a href="newsletter.html" target="_blank"><img src="../imagenes/iconos/arrobas.PNG"></a>
+               <div class="col-xs-12 col-sm-6 col-md-3">
+                   <h6>Newsletter</h6>
+                   <span>Novedades Fashion y promociones en Exclusiva</span>
+                   <a href="newsletter.html" target="_blank"><img src="../imagenes/iconos/arrobas.PNG"></a>
                 </div>
-                                 
+                
+    
+                
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <h6>Nuestras Garantias</h6>
                     <ul>
                         <li><a href="entrega.html">Entrega gratuita en la tienda</a></li>
                         <li><a href="pagoSeguro.html">Pago seguro</a></li>
                         <li><a href="cambiosYdevoluciones.html">Devoluciones y Cambios Gratuitos</a></li>
-                        <li><a href="tarjetaRegalo.html">Tarjeta Regalo</a></li>         
+                        <li><a href="tarjetaRegalo.html">Tarjeta Regalo</a></li>
+    
+                                
                     </ul>
                 </div>
-
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <h6>La Colección</h6>
                     <ul>
@@ -280,9 +286,9 @@
                         <li><a href="chaquetasH.html">Chaquetas Masculinas</a></li>				
                         <li><a href="zapatosM.html">Calzado Femenino</a></li>
                     </ul>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-3">
+    
+     
+                </div><div class="col-xs-12 col-sm-6 col-md-3">
                     <h6>Guías</h6>
                     <ul>
                         <li><a href="chaquetas_hombres.html">Tipo de Chaquetas Masculinas</a></li>
@@ -294,25 +300,31 @@
     
                                 
                     </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3">
+                </div><div class="col-xs-12 col-sm-6 col-md-3">
                     <h6>Información Practica</h6>
                     <ul>
                         <li><a href="">Toda la colección</a></li>
                         <li><a href="">Codigo de descuento</a></li>
                         <li><a href="faq.html">Preguntas Frecuentes</a></li>
-                        <li><a href="formulario.html">LookBook</a></li>            
+                        <li><a href="formulario.html">LookBook</a></li>
+    
+                                
                     </ul>
                 </div>
-            </div>
-                    
-                    
-            <div class="row redes-sociales">
+               
+        </div>
+        
+        
+        <div class="row redes-sociales">
                 <div class="col-md-3" ><a href="https://www.instagram.com/" class="instagram" target="_blank"><i class="fa fa-instagram"></i><span>instagram</span></a></div>
-                <div class="col-md-3" ><a href="https://www.facebook.com/"  class="facebook"  target="_blank"><i class="fa fa-facebook"></i><span>facebook</span></a></div>
-                <div class="col-md-3" ><a href="https://twitter.com/"       class="twitter"   target="_blank"><i class="fa fa-twitter"></i><span>twitter</span></a></div>
-                <div class="col-md-3" ><a href="https://www.youtube.com/"   class="youtube"   target="_blank"><i class="fa fa-youtube"></i><span>youtube</span></a></div>
-            </div>              
-        </footer>
+                <div class="col-md-3" ><a href="https://www.facebook.com/" class="facebook" target="_blank"><i class="fa fa-facebook"></i><span>facebook</span></a></div>
+                <div class="col-md-3" ><a href="https://twitter.com/" class="twitter"  target="_blank"><i class="fa fa-twitter"></i><span>twitter</span></a></div>
+                <div class="col-md-3" ><a href="https://www.youtube.com/" class="youtube"  target="_blank"><i class="fa fa-youtube"></i><span>youtube</span></a></div>
+    
+        </div>
+            
+            
+        
+    </footer>
 </body>
 </html>
