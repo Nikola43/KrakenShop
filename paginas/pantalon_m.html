@@ -5,7 +5,8 @@
     <title>Pantalón mujer</title>
 
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/malvina/css_malvina.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/css_malvina.css"/>
+    <link rel="icon" href="../imagenes/iconos/logo.png" type="image/png">
     <script src="../css/bootstrap.css"></script>
     <style>
         /*ocultar el seguir leyendo par mostrar cuando haga el onclick*/
@@ -14,26 +15,49 @@
         }
     </style>
 
-    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
     <script>
+        // de forma compacta
+        $(document).ready(function () {
 
-        //comienzo de jQuery // de forma compacta
-       /ocultar y mostrar contenido principal
-    $(document).ready(function(){
-        $(".row a").click( function() {
-            var array=(this.id).split("_");
-            $("#seguir_leyendo_"+array[array.length-1]).show(500, function(){
-            $("#a_leer_"+array[array.length-1]).html("repliega");
-                $("#a_leer_"+array[array.length-1]).click( function() {
-                    if( $("#a_leer_"+array[array.length-1]).html() == "repliega"){
-                        $("#seguir_leyendo_"+array[array.length-1]).hide(1000, function(){
-                            $("#a_leer_"+array[array.length-1]).html("Seguir leyendo...");
-                        });  
-                    }
-                });
+            //para recogerme todos los enlaces
+            $('.b1 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+
+        });
+
+        $(document).ready(function () {
+            //para recogerme todos los enlaces
+            $('.b2 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
             });
         });
-    });
+        $(document).ready(function () {
+            //para recogerme todos los enlaces
+            $('.b3 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+        });
+        $(document).ready(function () {
+            //para recogerme todos los enlaces
+            $('.b4 a').click(function (e) {
+                e.preventDefault();
+                $(this).hide("slow");
+                $("#seguir_leyendo_" + this.id.split("_")[this.id.split("_").length - 1]).show("slow");
+
+            });
+
+        });
 
 
     </script>
@@ -45,8 +69,8 @@
 <div class="container bg-light">
     <div class="row" id="row">
         <div class="col-sm-3 p-2">
-            <h2>Los jeans slim hasta el infinito</h2>
-            <div class="b_1">
+            <h2>Los Jean Slim hasta el infinito</h2>
+            <div class="b1">
                 <p id="t1">Los <b>jeans slim </b>en todos sus estados: denim natural, stone, efecto desgastado,
                     desteñido, gris, negro, rojo, camel…
                     Te encantarán particularmente los jeans slim para llevarlos hasta el infinito en todos los
@@ -68,8 +92,8 @@
             </div>
         </div>
         <div class="col-sm-3 p-2">
-            <h2>Los jeans skinny denim</h2>
-            <div class="b_2">
+            <h2><b>Los Jeans Skinny denim</b></h2>
+            <div class="b2">
                 <p id="t2">
                     Los <b>jeans skinny denim </b>y su efecto «segunda piel» se actualizan a lo largo de las temporadas
                     y de
@@ -91,8 +115,8 @@
         </div>
 
         <div class="col-sm-3 p-2">
-            <h2>Los jeans skinny originales</h2>
-            <div class="b_3">
+            <h2>Los Jeans Skinny originales</h2>
+            <div class="b3">
                 <p id="t3">Los <b>jeans skinny originales</b> están disponibles en numerosos colores: negro, gris o
                     incluso
                     camel para la temporada otoño-invierno, o en los tonos más llamativos y pasteles para la temporada
@@ -112,10 +136,11 @@
         </div>
 
         <div class="col-sm-3 p-2">
-            <h2>Los jeans rectos prefectos con todos los zapatos</h2>
-            <div class="b_4">
+            <h2>Los Jeans rectos prefectos con todos los zapatos</h2>
+            <div class="b4">
                 <p id="t4">Debido a que terminan por encima del pie, los <b>jeans rectos de mujer</b> permiten resaltar
-                    los zapatos. Para un estilo urbano, combínalo con unas zapatillas sportwear o de tela. Para un look más
+                    los zapatos. Para un estilo urbano, combínalo con unas zapatillas sportwear o de tela. Para un look
+                    más
                     elegante, combínalos con zapatos de piel, de piel sintético o ante..¿COMO LLEVARLO? </p>
 
                 <p><a id="a_leer_4" href="pantalon_m.html">
