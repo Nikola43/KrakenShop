@@ -27,9 +27,11 @@ $(document).ready(function(){
 
        });
         $(".contenidoProducto button").click(function(evento){
-            var precioAnterior=$(this).parent().find("span").html();
-            var precioActual=$(this).parent().find("p").html();
-            $("#productoDialog p").html("Has elegido el producto con descuento antes "+ precioAnterior +" y ahora solo "+ precioActual);
+            var nombre=$(this).parent().find("h3").html();
+            var descuento=$(this).parent().prev().find("span").html();
+            $("#productoDialog p").html("Has elegido el producto con descuento de  "+ descuento );
+             $("#productoDialog h4").html("Has elegido "+ nombre);
+
        });
 
     });
@@ -43,19 +45,20 @@ $(document).ready(function(){
     <div class="modal-dialog">
       <div class="modal-content">
       
-        <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title"></h4>
         </div>
         
-        <!-- Modal body -->
         <div class="modal-body">
             <p></p>
         </div>
         
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Añadir a Carrito</button>
+            <a href="carrito.html"> <button type="button" class="btn btn-primary" >Ver carrito</button></a>
+
         </div>
         
       </div>
@@ -334,7 +337,7 @@ $(document).ready(function(){
     
 <div class="container">
     <div class="col-md-12 mx-auto text-center promociones">
-            <h2 class="m-2 text-center">Nuestras Promociones</h2>
+            <h2 class="m-2 text-center">Nuestras Rebajas</h2>
     </div>
     <div class="row">
        
@@ -349,6 +352,7 @@ $(document).ready(function(){
 
 
                 <div class="contenidoProducto text-center mt-2">
+                    
                     <h3>Fila 'original</h3>
                     <p class="precio">
                         50€
@@ -373,7 +377,7 @@ $(document).ready(function(){
                         66,5€
                         <span>95€</span>
                     </p>
-                    <button type="button" class="carrito  btn-md" data-toggle="modal" data-target="#myModal">Añadir a Carrito</button>
+                    <button type="button" class="carrito  btn-md" data-toggle="modal" data-target="#productoDialog">Añadir a Carrito</button>
                 </div>
             </div>
         </div>
@@ -391,7 +395,7 @@ $(document).ready(function(){
                         38.25€
                         <span>45€</span>
                     </p>
-                    <button type="button" class="carrito  btn-md" data-toggle="modal" data-target="#myModal">Añadir a Carrito</button>
+                    <button type="button" class="carrito  btn-md" data-toggle="modal" data-target="#productoDialog">Añadir a Carrito</button>
                 </div>
             </div>
         </div>
@@ -409,7 +413,7 @@ $(document).ready(function(){
                         38.25€
                         <span>45€</span>
                     </p>
-                    <button type="button" class="carrito  btn-md" data-toggle="modal" data-target="#myModal">Añadir a Carrito</button>
+                    <button type="button" class="carrito  btn-md" data-toggle="modal" data-target="#productoDialog">Añadir a Carrito</button>
                 </div>
             </div>
         </div>
@@ -426,7 +430,7 @@ $(document).ready(function(){
                         45€
                         <span>50€</span>
                     </p>
-                    <button type="button" class="carrito  btn-md" data-toggle="modal" data-target="#myModal">Añadir a Carrito</button>
+                    <button type="button" class="carrito  btn-md" data-toggle="modal" data-target="#productoDialog">Añadir a Carrito</button>
                 </div>
             </div>
         </div>
@@ -444,7 +448,7 @@ $(document).ready(function(){
                         170€
                         <span>200€</span>
                     </p>
-                    <button type="button" class="carrito  btn-md" data-toggle="modal" data-target="#myModal">Añadir a Carrito</button>
+                    <button type="button" class="carrito  btn-md" data-toggle="modal" data-target="#productoDialog">Añadir a Carrito</button>
                 </div>
             </div>
         </div>
@@ -462,7 +466,7 @@ $(document).ready(function(){
                         40€
                         <span>50€</span>
                     </p>
-                    <button type="button" class="carrito  btn-md" data-toggle="modal" data-target="#myModal">Añadir a Carrito</button>
+                    <button type="button" class="carrito  btn-md" data-toggle="modal" data-target="#productoDialog">Añadir a Carrito</button>
                 </div>
             </div>
         </div>
@@ -480,7 +484,7 @@ $(document).ready(function(){
                         78€
                         <span>150€</span>
                     </p>
-                    <button type="button" class="carrito  btn-md" data-toggle="modal" data-target="#myModal">Añadir a Carrito</button>
+                    <button type="button" class="carrito  btn-md" data-toggle="modal" data-target="#productoDialog">Añadir a Carrito</button>
                 </div>
             </div>
         </div>
@@ -489,7 +493,14 @@ $(document).ready(function(){
         
     </div>
 </div>
+<div class="jumbotron galeria">
 
+  <p class="text-center">
+    <a href="galeria.html" class="btn btn-danger btn-lg " href="#" role="button" >Ir a galeria de Imagenes</a>
+  </p>
+</div>
+    
+    
 <footer>
 
     <div class="d-none d-lg-block">

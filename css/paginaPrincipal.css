@@ -229,69 +229,8 @@ img {/*TAMAÑO DE LAS IMAGENES EN DIV*/
 }
 
 
+.galeria{
+      background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)), url(../imagenes/general/sliderMujerDetalle.jpg) no-repeat scroll center center;
 
-
-
-
-
-
-
-
-
-
-
-/************nose si hace fato aun*****************/
-
-/**************SESSION DE PROMOCIONES***********/
-.divpromociones{
   
-    border: 1px solid lightgray;
-}
-.promociones h2 {
-    text-transform: uppercase;
-    font-family: initial;
-        border-bottom: 1px solid;
-   }
-
-.ropaPromocion {
-    font-size: 20px;
-}
-.ropaPromocion a {
-      color: #000;
-}
-.enlacepromo {
-    overflow: hidden;/*aremos esto para que no salga del div*/
-    display: block !important;
-}
-
-.enlacepromo:hover img {
-    transition: .3s all ease;
-    transform: scale(1.05); }
-
-
-
-
-/********ULTIMAS OPORTUNIDADES*********/
-h3{
-    text-align:center;
-    margin:1em;
-    text-transform:capitalize;
-    font-size:1.7em;
-}
-
-    
-    /**TRANSICIONES DE IMAGENES*/
-.pic-1{
-    opacity:1;
-    transition:all .3s ease-out 0s
-}
-.pic-2{
-    opacity:0;
-    position:absolute;
-    top:0;
-    left:0;
-    transition:all .3s ease-out 0s
-}
-.card:hover .pic-2{
-    opacity:1
 }

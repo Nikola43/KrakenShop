@@ -9,10 +9,15 @@
         <script src="../js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="../css/bootstrap.css">
         <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css"/>
+       
         <!-- CSS propio -->
         <link rel="stylesheet" href="../css/footer.css">
 		<link rel="stylesheet" href="../css/menuPrincipal.css">
 		<link rel="stylesheet" href="../css/detalles.css">
+          <script src="../js/lightbox.js"></script>
+        <link rel="stylesheet" href="../css/lightbox.css">
+
+
  </head>
 <style>
     .row{
@@ -21,18 +26,23 @@
     thead ,tfoot{
         background: rgba(0, 0, 0, 0.07);
     }    
-    .table tbody tr td.image-prod .img {
+     .table tbody tr td.imagenProducto .img {
     display: block;
     width: 100px;
     height: 150px;
     margin: 0 auto;
             background-size: cover;
-
-}
+    }
+    .nombreProducto h3{
+        font-size: 16px;
+        font-weight: bold;
+        color: brown;
+    }
 </style>
+    
+
   
 <body>   
-    
 	<header class="menu  header_area">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
@@ -79,8 +89,9 @@
 			<div class="container">
 				<div class="row">
     			<div class="col-md-12">
+
 	    				<table class="table table-hover table-responsive">
-						    <thead>
+						    <thead class="thead-light">
 						      <tr class="text-center">
 						        
 						        <th colspan="2">Producto</th>
@@ -91,19 +102,20 @@
 						    </thead>
 						    <tbody>
 						      <tr class="text-center">
-						        
-						        <td class="image-prod"><div class="img" style="background-image:url(../imagenes/hombre/chaqueta/imagen1.jpg);"></div></td>
-						        
-						        <td class="product-name">
+						        	<td class="imagenProducto"><div class="img" style="background-image:url(../imagenes/hombre/chaqueta/imagen1.jpg);"></div></td>
+
+                                    
+
+                                    
+						        <td class="nombreProducto">
 						        	<h3>Chaqueta de Hombre</h3>
 						        	<p>Magnifica chaqueta de entretiempo de hombre bicolor</p>
 						        </td>
 						        
 						        <td class="precio">25,90€</td>
 						        
-						        <td>
-                                    <input id="spinner" name="value" value="1">
-					          </td>
+						        <td>1
+                                  </td>
 						        <p>
   
 						        <td class="total">25,90€</td>
@@ -111,9 +123,8 @@
 
 						      <tr class="text-center">
 						        
-						        <td class="image-prod"><div class="img" style="background-image:url(../imagenes/mujeres/pantalones/imagen10.jpg);"></div></td>
-						        
-						        <td class="product-name">
+						        <td class="imagenProducto"><div class="img" style="background-image:url(../imagenes/mujeres/pantalones/imagen10.jpg);"></div></td>
+						        <td class="nombreProducto">
 						        	<h3>Pantalon Cargos Bajos </h3>
 						        	<p>Pantalón cargo con bajos elásticos, bolsillos, cintura con trabilla y cierre de cremallera y botón.</p>
 						        </td>
@@ -121,7 +132,7 @@
 						        <td class="precio">29,99€</td>
 						        
 						         <td>
-                                    <input id="spisnner" name="value" value="1">
+                                  1
 					          </td>
 						        
 						        <td class="total">29,99€</td>
